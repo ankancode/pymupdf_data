@@ -1,0 +1,220 @@
+Climate Risk Heat-Mapping Framework:
+Vulnerability Rubric
+1
+2
+3
+4
+Transition 
+Risks
+Regulatory 
+No regulatory/policy 
+changes are expected 
+to meaningfully 
+impact the sector 
+financially such 
+as through asset 
+devaluation, increased 
+expenditure (e.g., 
+compliance costs) 
+and/or loss of revenue
+Minor impact to the sector 
+expected from potential 
+regulatory/policy changes 
+(e.g., building efficiency) 
+resulting in financial 
+impact asset devaluation, 
+increased expenditure 
+(e.g., compliance costs) 
+or loss of revenue; 
+impact only on a subset 
+of the sector, subset of 
+geographies and/or only 
+indirect impact
+Moderate impact to the 
+sector expected from 
+regulatory/policy changes 
+(e.g., carbon taxes) 
+relating to the sector’s 
+carbon intensity; direct 
+impact with noticeable 
+economic implications 
+on the sector through 
+impacted asset valuation, 
+increased expenditure 
+(e.g., compliance costs) 
+and/or revenue loss
+Major impact to the 
+sector expected due to 
+expected regulatory/ 
+policy changes relating 
+to the sector’s carbon 
+intensity; significant shift 
+expected in the business 
+model or economics of 
+the sector impacting 
+asset valuation, 
+expenditures (e.g., 
+increased compliance 
+costs) and/or revenue
+Technology
+Outside of general 
+modernization of tech-
+nology, no technology 
+shifts are expected for 
+the sector
+Minor impact to the sector 
+expected from technology 
+changes (i.e., impact only 
+on a small subset of the 
+sector, or only indirect 
+impact through supply 
+chain) that result in 
+market share loss
+Moderate impact to the 
+sector expected from 
+technology changes, 
+resulting in some shift in 
+the economics of some 
+companies in the sector 
+leading to market share 
+loss
+Major impact to the 
+sector expected from 
+technology changes, 
+resulting in substitution 
+of a significant portion of 
+existing companies (i.e., 
+market share loss)
+Stakeholder
+There is no 
+expectation of 
+stakeholder 
+composition or 
+preferences changing 
+for the industry
+Minor stakeholder impact 
+due to expected shift in 
+preferences, with minor 
+financial impact on 
+companies (e.g., revenue, 
+vendor pricing)
+Moderate stakeholder 
+impact is expected for 
+the sector in terms of 
+stakeholder preferences 
+and composition, with 
+modest financial impact 
+(e.g., revenue, vendor 
+pricing)
+Major stakeholder impact 
+is expected in terms of 
+both client preferenc-
+es and composition of 
+stakeholders, resulting 
+in significant financial 
+impact (e.g., revenue loss, 
+vendor pricing)
+Legal
+No increased litigation 
+concerns are expected 
+to impact the industry 
+that would lead to 
+increased financial 
+burden (e.g., legal 
+fees, settlements)
+Minor litigation concerns 
+are expected to impact the 
+sector, with minor financial 
+consequences (e.g., legal 
+fees, settlements)
+Moderate litigation 
+concerns are expected 
+to impact the sector, 
+with modest financial 
+impact (e.g., legal fees, 
+settlements)
+Major litigation is 
+expected to impact the 
+sector, with significant 
+financial impact (e.g., 
+legal fees, settlements)
+Physical 
+Risks
+Acute 
+Hazard
+Acute physical 
+hazards have no 
+impact on the day-
+to-day operations 
+of companies in the 
+sector
+Sector would experience 
+minor impact from acute 
+physical hazards on 
+operations (e.g., revenue 
+loss due to business 
+disruption), or minor 
+damage to assets (e.g., 
+asset devaluation)
+Sector would experience 
+moderate and protracted 
+impact from acute 
+physical hazards on 
+operations (e.g., revenue 
+loss due to business 
+disruption), or moderate 
+damage to assets (e.g., 
+asset devaluation)
+Sector would experience 
+major and protracted im-
+pact from acute physical 
+hazards on operations 
+(e.g., revenue loss due to 
+business disruption),
+or significant damage 
+to assets (e.g., asset 
+devaluation)
+Chronic 
+Hazard
+Chronic physical 
+hazards have no 
+impact on the 
+operations or 
+valuation of assets/
+companies in the 
+sector
+Chronic physical hazards 
+have minor potential 
+impact on the operations 
+(e.g., increased insurance 
+cost) or valuation of 
+assets/companies in the 
+sector
+Sector would experience 
+moderate and sustained 
+impact on the operations 
+(e.g., increased insur-
+ance cost) or valuation 
+of assets/companies in 
+the sector
+Sector would experience 
+major and irreversible 
+impact on the operations 
+or valuation of assets/ 
+companies in the sector
+LOW
+VULNERABILITY SCORE
+HIGH
+Our	climate	risk	heat	map	(included	on	the	following	pages)	categorizes	sectors	under	one	of	four	vulnerability	scores,	ranging	from	
+low	to	high.	We	have	established	subscores	using	the	rubric	in	the	following	table	for	various	aspects	of	transition	and	physical	risks.
+Contents 
+ESG at Citi 
+Sustainable Finance 
+Sustainable Progress  
+Equitable & Resilient Communities 
+Talent & DEI 
+Risk Management & Responsible Business 
+Appendices
+CITI 2021 ESG REPORT
+46
+

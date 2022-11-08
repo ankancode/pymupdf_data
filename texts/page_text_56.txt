@@ -1,0 +1,152 @@
+Environmental Performance for Operations (continued)
+GHG EMISSIONS (SCOPE 1 & 2) BY REGION
+REGIONAL OPERATIONAL ENVIRONMENTAL PERFORMANCE
+Region
+Scope 1 C02e
+(mt)
+Scope 2 CO2e
+Location-Based (mt)
+Scope 2 CO2e
+Market-Based (mt)
+ Total CO2e
+Location-Based (mt)
+Total CO2e
+Market-Based (mt)
+Asia Pacific
+755
+133,947
+50,807
+134,702
+51,562
+Europe, Middle East  
+and Africa
+3,939
+42,248
+5,171
+46,187
+9,111
+Latin America
+2,046
+83,969
+4,022
+86,015
+6,068
+North America
+37,943
+203,147
+978
+241,090
+38,921
+Region
+GHG Emissions
+Location-Based (mt)
+GHG Emissions 
+Market-Based (mt)
+Total Energy 
+Consumption  
+(GWh)
+Total Water 
+Consumption 
+(m3)
+Total Waste 
+(mt)
+Asia Pacific
+134,702
+51,562
+215
+593,988
+4,324
+Europe, Middle East  
+and Africa
+46,187
+9,111
+171
+315,964
+1,911
+Latin America
+86,015
+6,068
+219
+801,014
+7,767
+North America
+241,090
+38,921
+743
+1,908,663
+11,593
+Emission Factor Basis
+Electricity 
+(kWh)
+Steam 
+(kWh)
+Chilled 
+Water 
+(kWh)
+Total 
+(kWh)
+% of Total 
+Consumption
+RECs or Other Energy Attribute 
+Certificates (EACs)
+865,079,675
+0
+0
+865,079,675
+76%
+PPA or Source Contract
+140,856,007
+0
+0
+140,856,007
+12%
+Self-Generated Renewables
+117,604
+0
+0
+117,604
+0%
+Supplier-Specific
+0
+0
+0
+0
+0%
+Residual Mix
+0
+0
+652,402
+652,402
+0%
+Regionally Aligned EACs – 
+Grid Average
+104,781,026
+0
+17,274,301
+122,055,327
+11%
+Steam Default
+0
+8,427,189
+0
+8,427,189
+1%
+Total
+1,110,834,312
+8,427,189
+17,926,703
+1,137,188,204
+100%
+ENERGY CONSUMPTION BY MARKET-BASED EMISSION FACTOR TYPES
+Note:	Figures	may	not	sum	to	totals	due	to	rounding.
+Contents 
+ESG at Citi 
+Sustainable Finance 
+Sustainable Progress  
+Equitable & Resilient Communities 
+Talent & DEI 
+Risk Management & Responsible Business 
+Appendices
+CITI 2021 ESG REPORT
+57
+

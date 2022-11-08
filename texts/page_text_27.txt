@@ -1,0 +1,115 @@
+$1 Trillion Sustainable Finance Commitment
+Impact Data
+Environmental Impacts
+2020
+2021
+Total
+1) Avoided greenhouse gas (GHG) emissions (mt CO2e)
+2,665,387
+1,221,796
+3,887,184
+From renewable energy projects
+2,479,658
+995,850
+3,475,508
+From green affordable housing finance
+1,897
+789
+2,686
+From energy efficiency finance
+183,832
+225,158
+408,990
+2) Renewable energy capacity added (MW)
+1,650
+718
+2,368
+Social Impacts
+2020
+2021
+Total
+1) Total people impacted
+11,130,783
+14,901,937
+26,032,720
+People impacted through microfinance and home solar systems
+307,421
+1,407,205
+1,714,626
+People impacted through renewable energy projects
+1,822,972
+1,035,387
+2,858,359
+People impacted from affordable housing projects
+52,305
+44,556
+96,861
+People impacted from education projects
+247,220
+46,651
+293,872
+People impacted from water improvement projects
+2,013,124
+12,282,759
+14,295,882
+People impacted from transit systems
+6,687,741
+85,379
+6,773,120
+2) Total jobs supported
+360,608
+1,397,725
+1,758,333
+Jobs supported through microfinance and home solar systems
+307,421
+1,351,650
+1,659,071
+Jobs supported through renewable energy projects
+4,485
+4,237
+8,721
+Jobs supported from affordable housing projects
+38,904
+30,519
+69,423
+Jobs supported from education projects
+7,701
+7,012
+14,713
+Jobs supported from water improvement projects
+1,565
+3,465
+5,030
+Jobs supported from transit systems
+534
+841
+1,375
+The reporting on our progress toward our $1 trillion commitment in sustainable finance by 2030 includes measuring the en-
+vironmental and social impacts associated with contributing sustainable finance projects. Where feasible, we have estimated 
+the impacts representative of Citi’s financing and facilitation activities. Our impact measurement methodologies align with our 
+accounting approach, reporting our share of the impacts proportional to our financial share of the transaction.
+Impact Calculation Methodology Summary
+Citi initiatives help to create measurable impacts for communities across the world. To estimate the environmental and social 
+impacts of Citi-financed projects and activities we looked at the following metrics:
+ 
+• Avoided GHG emissions refers to the amount of GHG emissions avoided because of Citi’s share of financing for renewable 
+energy, green affordable housing and energy efficiency projects. GHG emissions avoidance is calculated by applying regional 
+electric grid factors to Citi’s share of financing across three types of activities, including a low-carbon source replacing energy 
+use from the grid, energy efficiency upgrades and green housing units that are LEED-certified. Impacts reflect the per annum 
+benefit as opposed to benefit over entire project life.
+• For renewable energy projects, total project capacity for energy is calculated as the annual capacity factor applied to  
+the total project size per annum and multiplied by the CO2 emissions factor. 
+• For energy efficiency upgrades, the average household energy savings is calculated as the average household energy  
+use multiplied by the percentage of energy savings per thousand U.S. dollars invested. The result is multiplied by the  
+total warehouse value and the CO2 emissions factor. 
+Contents 
+ESG at Citi 
+Sustainable Finance 
+Sustainable Progress  
+Equitable & Resilient Communities 
+Talent & DEI 
+Risk Management & Responsible Business 
+Appendices
+CITI 2021 ESG REPORT
+28
+

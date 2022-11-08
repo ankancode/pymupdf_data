@@ -1,0 +1,117 @@
+*	International	Energy	Agency	scenarios.
+**	Only	includes	power	generation	clients.	Clients	primarily	in	the	transmission	and	distribution	value	chain	were	excluded.
+***	The	emissions	intensity	from	the	IEA	SDS	OECD	scenario	is	derived	by	dividing	the	CO2e	emissions	resulting	from	the	Power	sector	with	the	electricity	generation	at	2030.
+Note:	These	targets	are	based	on	available	data	as	of	September	2021.	Updates	to	improve	data	quality	of	the	baseline	numbers	may	result	in	changes	to	these	targets.
+Sector
+Scenario
+2020 Baseline
+2030 Targets
+Energy
+(Scope 1, 2, 3)
+Net Zero Emissions by 
+2050 (NZE 2050)*
+143.8 million mt CO2e
+29% reduction from 2020 
+baseline
+102.1 million mt CO2e
+Power**
+(Scope 1)
+Sustainable  
+Development Scenario 
+(SDS 2020)*
+313.5 kg CO2e/MWh
+63% reduction in Scope 1 
+intensity per MWh
+115 kg CO2e/MWh***
+More	information	about	the	analysis	we	
+conducted	to	establish	these	targets,	includ-
+ing	scenario	selection	and	the	scope	and	
+boundaries	of	the	targets,	is	available	in	our	
+2021	TCFD	Report.	In	future	years,	we	will	
+conduct	further	analysis	to	facilitate	target	
+setting	for	additional	sectors.	In	2022,	we	
+plan	to	focus	on	the	Auto	Manufacturing,	
+Steel,	Thermal	Coal	Mining	and	Commercial	
+Real	Estate	sectors	for	core	analysis	and	
+target	setting,	in	alignment	with	the	NZBA	
+guidelines.	We	will	consider	the	remaining	
+sectors,	including	Aluminum,	Aviation,	
+Cement	and	Agricultural	subsectors	in	2023	
+and	2024.	
+Citi’s Approach to 
+Managing Climate Risk
+Citi’s	Risk	Management	function	is	
+responsible	for	identifying,	measuring,	
+managing,	controlling	and	reporting	risks	
+to	the	company.	We	identify	climate	risk	
+as	an	“emerging	risk”	in	Citi’s	Enterprise	
+Risk	Management	Framework.	Within	the	
+framework,	emerging	risks	are	those	that	
+are	new	or	rapidly	changing,	with	high	
+growth	potential,	and	are	characterized	by	
+data	unavailability	or	other	uncertainties.	
+We	do	not	view	climate	risk	as	a	stand-alone	
+risk	category	but	as	a	transversal	risk,	
+capable	of	manifesting	across	each	of	Citi’s	
+seven	risk	categories	in	our	risk	taxonomy:	
+Credit,	Market,	Liquidity,	Strategic,	
+Operational,	Compliance	and	Reputation.	
+Climate	impacts	may	be	either	physical-	or	
+transition-related	and	may	vary	depending	
+on	the	time	horizon.	
+During	2021,	we	strengthened	our	gover-
+nance	and	deepened	our	expertise	to	
+advance	effective	management	of	climate	
+risks	and	opportunities.	Highlights	include	
+the	following:	
+	•
+Formation	of	a	new	Global	ESG	Council,	
+consisting	of	senior	members	of	manage-
+ment,	with	the	aim	of	providing	enhanced	
+oversight	of	our	ESG	activities	and	goals	
+	•
+Creation	of	the	Natural	Resources	&	
+Clean	Energy	Transition	team	to	inte-
+grate	our	Energy,	Power	and	Chemicals	
+businesses,	in	order	to	assist	our	clients	
+across	these	sectors	as	they	transition
+	•
+Growth	of	our	dedicated	Climate	Risk	
+team,	with	an	emphasis	on	expertise	
+in	credit	risk,	scenario	analysis,	stress	
+testing	and	regulatory	engagement	
+	•
+Establishment	of	a	Net	Zero	Task	Force	to	
+support	the	development	and	launch	of	
+our	net	zero	plan
+Regulatory Compliance
+Interest	in	climate	risk	management	from	
+regulators	continues	to	grow	globally.	
+We	are	monitoring	and	responding	to	
+emerging	regulatory	obligations	and	
+engaging	with	regulators	around	the	world	
+about	climate	risk	issues,	especially	related	
+to	risk	management,	strategy	and	scenario	
+analysis	requirements.	
+As	we	anticipate	an	increase	in	regulatory	
+requirements,	voluntary	frameworks	and	
+mandated	product	classifications,	we	are	
+strengthening	our	internal	regulatory	teams	
+with	subject	matter	experts.	We	are	also	
+improving	our	access	to	relevant,	accurate	
+data	to	sharpen	our	scenario	analyses	and	
+building	a	standardized,	global	climate	
+disclosure	strategy	that	can	monitor	and	
+manage	requirements	and	provide	consis-
+tent	reporting	across	our	operations.	
+Contents 
+ESG at Citi 
+Sustainable Finance 
+Sustainable Progress  
+Equitable & Resilient Communities 
+Talent & DEI 
+Risk Management & Responsible Business 
+Appendices
+CITI 2021 ESG REPORT
+42
+

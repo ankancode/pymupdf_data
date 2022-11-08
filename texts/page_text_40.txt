@@ -1,0 +1,69 @@
+The	PCAF	methodology	is	primarily	focused	on	reporting	financed	emissions	on	an	annual	basis	and	relies	on	data	of	funds	outstand-
+ing,	not	the	total	funds	that	a	financial	institution	may	have	committed	to	the	client	in	the	reporting	year.	While	we	intend	to	continue	
+disclosing	per	the	PCAF	requirements	to	provide	this	annual	view	of	financed	emissions	associated	with	our	activities,	we	are	using	
+“committed	funds”	data	to	more	holistically	attribute	our	clients’	emissions	for	the	baseline	financed	emissions	figures	in	our	net	zero	
+plan.	Consequently,	we	undertook	an	additional	analysis	of	our	Energy	and	Power	loan	portfolios	using	total	committed	funds	to	calcu-
+late	baseline	emissions	from	2020	and	establish	2030	emission	targets.	The	use	of	committed	funds	in	this	context	provides	a	more	
+accurate	reflection	of	the	maximum	emissions-generating	activity	that	Citi	has	agreed	to	finance	and	is	therefore	better	suited	for	the	
+purposes	of	forward-looking	emissions	management	and	target	setting.	This	approach	results	in	discrepancies	between	the	metrics	we	
+report	for	PCAF	and	for	our	net	zero	targets,	but	we	believe	the	committed	funds	approach	is	better	aligned	with	the	way	we	expect	to	
+manage	our	net	zero	targets.	
+*	mt	CO2e	=	metric	tons	of	carbon	dioxide	equivalent.
+**	Omission	of	Scope	3	emissions	for	Power	is	explained	in	the	“Scope	3	Calculation	Methodology”	in	Appendix	A	(page	71)	of	our	2021	TCFD	Report.				
+***	Scope	3,	Category	11:	Use	of	Sold	Product,	for	extractive	and	refining	sectors.
+*	Omission	of	Scope	3	emissions	for	Power	is	explained	in	the	“Scope	3	Calculation	Methodology”	in	Appendix	A	(page	71)	of	our	2021	TCFD	Report.				
+FPO TABLE
+Scope
+Power
+Energy
+Scope 1
+4,261,747
+17,308,063
+Scope 2
+164,059
+518,594
+Scope 3
+N/A**
+40,113,950***
+Total
+4,425,806
+57,940,607
+Scope
+Power
+Energy
+Scope 1
+11,464,654
+33,847,434
+Scope 2
+485,784
+1,434,241
+Scope 3
+N/A*
+108,478,743
+Total
+11,950,438
+143,760,418
+2020 ABSOLUTE FINANCED EMISSIONS: OUTSTANDING EXPOSURE (MT CO2E*)
+2020 ABSOLUTE FINANCED EMISSIONS: COMMITTED EXPOSURE (MT CO2E)
+To	reach	net	zero,	we	must	move	from	our	baseline	across	a	decarbonization	pathway	to	our	ultimate	net	zero	target.	Establishing	2030	
+targets	are	the	first	step	in	that	journey.	The	next	step	is	to	develop	an	implementation	plan	to	achieve	targeted	reductions	in	each	
+relevant	sector.	We	are	evaluating	a	number	of	strategies	and	tools	to	drive	towards	the	established	goals,	though	they	may	not	all	be	
+applicable	for	every	sector	or	client.	Some	of	the	emissions	reduction	approaches	and	potential	future	tools	include	client	engagement,	
+capital	allocation	strategy	and	portfolio	management	tools.	
+The	table	on	the	following	page	summarizes	our	current	2030	emission	targets	for	Citi’s	Energy	and	Power	portfolios.	These	interim	
+2030	targets	are	a	key	component	of	our	net	zero	plan	for	emissions	in	our	client	portfolio.	
+Energy and Power Baseline Emissions and Interim Targets
+During	2021,	we	used	the	PCAF	methodology	to	conduct	an	analysis	of	our	Energy	and	Power	portfolios	using	2020	data.	In	alignment	
+with	PCAF	requirements,	this	analysis	is	based	on	funds	outstanding	(drawn	and	not	yet	repaid)	by	clients	during	the	year	to	provide	a	
+view	of	financed	emissions	associated	with	our	activities	during	that	year.
+Contents 
+ESG at Citi 
+Sustainable Finance 
+Sustainable Progress  
+Equitable & Resilient Communities 
+Talent & DEI 
+Risk Management & Responsible Business 
+Appendices
+CITI 2021 ESG REPORT
+41
+

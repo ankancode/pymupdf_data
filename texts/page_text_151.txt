@@ -1,0 +1,128 @@
+Topic
+Accounting Metric
+Category
+Code
+Response
+Data 
+Security
+(1) Number of data breaches, (2) 
+percentage involving personally 
+identifiable information (PII), 
+(3) number of account holders 
+affected
+Quantitative
+FN-CF-
+230a.1
+See response to FN-CB-230a.1.
+Card-related fraud losses from 
+(1) card-not-present fraud and 
+(2) card-present and other fraud
+Quantitative
+FN-CF-
+230a.2
+Citi did not have any material fraud losses requiring disclosure.
+Description of approach to 
+identifying and addressing data 
+security risks
+Discussion 
+and 
+Analysis
+FN-CF-
+230a.3
+See response to FN-CB-230a.2.
+Selling 
+Practices
+Percentage of total 
+remuneration for covered 
+employees that is variable 
+and linked to the amount of 
+products and services sold
+Quantitative
+FN-CF-
+270a.1
+Citi does not track this information.
+Approval rate for (1) credit 
+and (2) pre-paid products for 
+applicants with FICO scores 
+above and below 660
+Quantitative
+FN-CF-
+270a.2
+Citi does not disclose its approval rates for its credit card and pre-paid 
+products. Citi provides a FICO score distribution of outstanding North 
+America Citi-Branded and Citi Retail Services card receivables in its 10-K. 
+The disclosure distribution is disaggregated by scores above and below 
+680 and does not include pre-paid products.
+• 2021 10-K pages 207-208
+(1) Average fees from add-on 
+products, (2) average APR, 
+(3) average age of accounts, 
+(4) average number of trade 
+lines, and (5) average annual 
+fees for pre-paid products, for 
+customers with FICO scores 
+above and below 660
+Quantitative
+FN-CF-
+270a.3
+Citi does not track this information.
+(1) Number of complaints filed 
+with the Consumer Financial 
+Protection Bureau (CFPB), (2) 
+percentage with monetary 
+or nonmonetary relief, (3) 
+percentage disputed by 
+consumer, (4) percentage that 
+resulted in investigation by the 
+CFPB
+Quantitative
+FN-CF-
+270a.4
+Citi does not report this information.
+Total amount of monetary 
+losses as a result of legal 
+proceedings associated with 
+selling and servicing of products
+Quantitative
+FN-CF-
+270a.5
+Citi discloses all material legal and regulatory proceedings in its 10-
+K, including when a suit was filed, the court, the parties involved, the 
+allegations and the relief sought. Citi also discloses information regarding 
+material inquiries or investigations by regulators associated with selling 
+and servicing of products.
+• 2021 10-K pages 296-303
+Activity 
+Metric
+Number of unique consumers 
+with an active (1) credit card 
+account and (2) pre-paid debit 
+card account
+Quantitative
+FN-CF-
+000.A
+Citi discloses the number of end-of-period retail banking and credit card 
+accounts by region. Citi does not disaggregate credit card and pre-paid 
+debit card accounts nor report unique consumers.
+• 4Q21 Quarterly Financial Data Supplement pages 9, 12, 14 and 16
+Number of (1) credit card 
+accounts and (2) pre-paid debit 
+card accounts
+Quantitative
+FN-CF-
+000.B
+Citi discloses the number of end-of-period retail banking and credit card 
+accounts by region. Citi does not disaggregate credit card and pre-paid 
+debit card accounts.
+• 4Q21 Quarterly Financial Data Supplement pages 9, 12, 14 and 16
+Contents 
+ESG at Citi 
+Sustainable Finance 
+Sustainable Progress  
+Equitable & Resilient Communities 
+Talent & DEI 
+Risk Management & Responsible Business 
+Appendices
+CITI 2021 ESG REPORT
+152
+

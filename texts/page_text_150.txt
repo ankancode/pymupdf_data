@@ -1,0 +1,141 @@
+Topic
+Accounting Metric
+Category
+Code
+Report Section or Other Documentation
+Incorporation 
+of ESG 
+Factors 
+in Credit 
+Analysis
+Commercial and industrial 
+credit exposure, by industry
+Quantitative
+FN-CB-
+410a.1
+• 2021 10-K page 79
+Description of approach to 
+incorporation of environmental, 
+social, and governance (ESG) 
+factors in credit analysis
+Discussion 
+and Analysis
+FN-CB-
+410a.2
+• Risk Management > Environmental and Social Risk Management
+• Environmental and Social Policy Framework
+• 2021 10-K pages 118-119
+Business 
+Ethics
+Total amount of monetary 
+losses as a result of legal 
+proceedings associated 
+with fraud, insider trading, 
+anti-trust, anti-competitive 
+behavior, market manipulation, 
+malpractice, or other related 
+financial industry laws or 
+regulations
+Quantitative
+FN-CB-
+510a.1
+Citi discloses all material legal and regulatory proceedings in its 10-
+K, including when a suit was filed, the court, the parties involved, the 
+allegations and the relief sought. Citi also discloses information regarding 
+material inquiries or investigations by regulators, including any legal and 
+regulatory proceedings associated with such business ethics matters.
+• 2021 10-K pages 296-303
+Description of whistleblower 
+policies and procedures
+Discussion 
+and Analysis
+FN-CB-
+510a.2
+• Human Rights > Reporting Mechanisms for Stakeholders
+• Citi Code of Conduct pages 10-11
+Systemic 
+Risk 
+Management
+Global Systemically Important 
+Bank (G-SIB) score, by category
+Quantitative
+FN-CB-
+550a.1
+• 2021 10-K page 31
+• 2021 Systemic Risk Report (FR Y-15) 
+Description of approach to 
+incorporation of results of 
+mandatory and voluntary stress 
+tests into capital adequacy 
+planning, long-term corporate 
+strategy, and other business 
+activities
+Discussion 
+and Analysis
+FN-CB-
+550a.2
+• 2021 10-K page 32
+Activity 
+Metric
+(1) Number and (2) value of 
+checking and savings accounts 
+by segment: (a) personal and (b) 
+small business
+Quantitative
+FN-CB-
+000.A
+Citi discloses the number of end-of-period retail banking and credit card 
+accounts by region. Citi does not disaggregate personal and small business 
+accounts.
+• 4Q21 Quarterly Financial Data Supplement pages 9, 12, 14 and 16
+(1) Number and (2) value of 
+loans by segment: (a) personal, 
+(b) small business, and (c) 
+corporate
+Quantitative
+FN-CB-
+000.B
+Citi discloses the value of outstanding consumer and corporate loans in its 
+10-K. Consumer loans are reported as consumer mortgages and credit card 
+loans, while personal, small business and other loans are aggregated.
+• 2021 10-K pages 70-83
+CONSUMER FINANCE
+Topic
+Accounting Metric
+Category
+Code
+Response
+Customer 
+Privacy
+Number of account holders 
+whose information is used for 
+secondary purposes
+Quantitative
+FN-CF-
+220a.1
+Citi does not report this information.
+Total amount of monetary 
+losses as a result of legal 
+proceedings associated with 
+customer privacy
+Quantitative
+FN-CF-
+220a.2
+Citi discloses all material legal and regulatory proceedings in its 10-
+K, including when a suit was filed, the court, the parties involved, the 
+allegations and the relief sought. Citi also discloses information regarding 
+material inquiries or investigations by regulators. Citi did not have any 
+material matters requiring disclosure associated with customer privacy in 
+its 2021 10-K.
+• 2021 10-K pages 296-303
+Contents 
+ESG at Citi 
+Sustainable Finance 
+Sustainable Progress  
+Equitable & Resilient Communities 
+Talent & DEI 
+Risk Management & Responsible Business 
+Appendices
+CITI 2021 ESG REPORT
+151
+

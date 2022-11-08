@@ -1,0 +1,71 @@
+Assurance
+ 
+ 
+ 
+ 
+This engagement covers verification of emissions from anthropogenic sources of 
+greenhouse gases and other environmental data included within the organisation’s 
+boundary and meets the requirements of WRI/WBCSD GHG Protocol and its 
+amendments. 
+ 
+   
+• The organizational boundary was established following the operational 
+control approach 
+• Title or description of activities: Banking and Finance 
+• Location/boundary of the activities: Global 
+• Physical infrastructure, activities, technologies and processes of the 
+organization: Data Centres, Offices, Operation Centres, Retail Services, 
+and Retail non-serviced facilities. 
+• GHG sources, sinks and/or reservoirs included:  
+Scope 1: Direct GHG emissions and removals – stationary combustion in 
+owned, leased and sub-leased locations. Transportation fleet, fugitive and 
+refrigerant emissions are excluded from the inventory;  
+Category 2: Indirect GHG emissions from imported energy – purchased 
+electricity and district heating and cooling; 
+ 
+Scope 3: Other indirect GHG emissions – Business Travel (air and rail (rail 
+travel is to trips which are booked through Citi’s primary Travel 
+Management Company only)).       
+ 
+• Types of GHGs included: CO2, N2O, CH4  
+• GHG Reduction Initiatives: None. 
+• GHG information for the following period was verified: 1st January 2021 to 
+31st December 2021 
+• Types of environmental data included: electricity consumption, district 
+heating (steam & chilled water), natural gas consumption, fuel oil 
+consumption, waste diverted from landfill, total waste and water (potable 
+and non-potable) consumed  
+• Intended user of the verification Opinion: Internal and external stakeholders. 
+ 
+Objective 
+The purpose of this verification exercise were, by review of objective evidence, to 
+independently review: 
+• Whether the CO2 equivalent emissions and environmental data are as 
+declared by the organisation’s statement  
+• That the data reported are accurate, complete, consistent, transparent and 
+free of material error or omission 
+• The implementation of Citigroup, Inc systems & procedures for the 
+management and reporting of environmental data and the calculation of 
+greenhouse gas emissions 
+ 
+Criteria 
+Criteria against which the verification assessment is undertaken are the 
+requirements of the WRI/WBCSD GHG Protocol (for CO2 equivalent emissions 
+only) and its amendments, the GHG Inventory and environmental data methodology 
+as defined by Citigroup, Inc., and the principles of completeness, transparency, 
+accuracy, consistency and relevance. 
+ 
+ 
+ 
+ 
+Contents 
+ESG at Citi 
+Sustainable Finance 
+Sustainable Progress  
+Equitable & Resilient Communities 
+Talent & DEI 
+Risk Management & Responsible Business 
+Appendices
+CITI 2021 ESG REPORT
+178
+

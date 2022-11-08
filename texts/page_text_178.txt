@@ -1,0 +1,59 @@
+Assurance
+ 
+ 
+ 
+Materiality 
+The materiality required of the verification was considered by SGS to be below 
+10%, based on the needs of the intended user of the GHG and environmental data 
+Statement 
+ 
+Conclusion 
+Citigroup, Inc. provided the GHG and environmental Statement based on the 
+requirements of the WRI/WBCSD GHG Protocol and its amendments, the Citigroup, 
+Inc. methodology and the principles of completeness, transparency, accuracy, 
+consistency and relevance. The following GHG emissions and environmental data 
+for the period 1st January 2021 – 31st December 2021 are verified by SGS to a 
+limited level of assurance, consistent with the agreed verification scope, objectives 
+and criteria.   
+ 
+44,683 tCO2e of GHG emissions Scope 1 
+463,311 tCO2e of GHG emissions Scope 2 (location based) 
+60,979 tCO2e of GHG emissions Scope 2 (market based) 
+507,994 tCO2e of total GHG emissions Scopes 1 and 2, based on Scope 2 location-
+based emissions 
+10,586 tCO2e of GHG emissions Scope 3 
+ 
+1,110.83 GWh of electricity consumption 
+26.35 GWh of district heating and cooling 
+178.00 GWh of natural gas 
+0.74 GWh of LPG 
+0.02 GWh of fuel oil 
+31.59 GWh of diesel 
+5,824 metric tonnes of waste diverted from landfill 
+25,595 metric tonnes of total waste 
+3,366,620 cubic meters of potable water consumed 
+253,010 cubic meters of non-potable water consumed 
+10,554 tCO2e from business travel by air 
+32 tCO2e from business travel by rail 
+ 
+SGS’ approach is risk-based, drawing on an understanding of the risks associated 
+with modeling GHG emission information and the controls in place to mitigate these 
+risks. Our examination included assessment, on a sample basis, of evidence 
+relevant to the voluntary reporting of emission and environmental data. 
+  
+SGS concludes with limited assurance that there is no evidence to suggest that the 
+reported CO2 equivalent and environmental data assertion is not materially correct 
+and is not a fair representation of GHG and environmental data and information 
+based on the calculation methodologies utilised. 
+ 
+Contents 
+ESG at Citi 
+Sustainable Finance 
+Sustainable Progress  
+Equitable & Resilient Communities 
+Talent & DEI 
+Risk Management & Responsible Business 
+Appendices
+CITI 2021 ESG REPORT
+179
+

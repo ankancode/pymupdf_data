@@ -1,0 +1,121 @@
+Sustainability Accounting Standards Board Index
+This index was prepared in accordance with Industry Standards Version 2018-10 issued by the Sustainability Accounting Standards Board (SASB). The 
+disclosures below relate to three sector standards aligned to our mix of businesses: Commercial Banks, Consumer Finance and Investment Banking & Brokerage. 
+Unless otherwise noted, data and descriptions apply to our entire company, not just the businesses relevant to that sector. We do not yet disclose all metrics 
+included in the sector standards, but we will continue to evaluate their relevance to our business and our ability to improve, and we will consider increasing the 
+number of metrics we include in the future. All data is as of and for the year ended Dec. 31, 2021, unless otherwise noted.
+COMMERCIAL BANKS
+Topic
+Accounting Metric
+Category
+Code
+Report Section or Other Documentation
+Data 
+Security
+(1) Number of data breaches, (2) 
+percentage involving personally 
+identifiable information (PII), 
+(3) number of account holders 
+affected
+Quantitative
+FN-CB-
+230a.1
+Citi has a robust program that addresses the cybersecurity life cycle of 
+preparedness and prevention, detection, response, mitigation, lessons learned 
+and training. Cybersecurity incidents, including any data breaches, are 
+reported to consumers, regulators, business partners and others as legally 
+required and otherwise appropriate. For security reasons, Citi generally 
+does not publicly reveal further details regarding the security incidents 
+we may encounter in a particular year. Citi provides a general discussion of 
+cybersecurity incidents with regard to Operational Risk in its 10-K.
+• 2021 10-K pages 52 and 115-116
+Description of approach to 
+identifying and addressing data 
+security risks
+Discussion 
+and Analysis
+FN-CB-
+230a.2
+• Risk Management > Safeguarding Data and Protecting Customer  
+Information
+Financial 
+Inclusion &
+Capacity 
+Building
+(1) Number and (2) amount of 
+loans outstanding qualified to 
+programs designed to promote 
+small business and community 
+development
+Quantitative
+FN-CB-
+240a.1
+Citi engages in community development efforts by equity investment 
+through the Citi Impact Fund and financing affordable housing and 
+community development projects through our Citi Community Capital 
+group. Key statistics and the impacts of these efforts as well as activity to 
+support small business lending can be found in our 2021 Environmental, 
+Social and Governance (ESG) Report. 
+• Equitable and Resilient Communities > Investing in Our Communities: 
+2021 Highlights
+• Our Commitment to Social Finance
+• Action for Racial Equity
+• Citi Impact Fund
+• COVID-19 Relief and Recovery
+• Affordable Housing
+• Strategic Philanthropy
+• Citi Community Capital Website 
+(1) Number and (2) amount of 
+past due and nonaccrual loans 
+qualified to programs designed 
+to promote small business and 
+community development
+Quantitative
+FN-CB-
+240a.2
+Citi does not report this information.
+Number of no-cost retail 
+checking accounts provided 
+to previously unbanked or 
+underbanked customers 
+Quantitative
+FN-CB-
+240a.3
+In 2014, Citi launched the Access Account — a simple, checkless bank 
+account with low or no monthly fees and no overdraft fees, which provides 
+customers with a straightforward way to save money and manage their 
+finances. As of Dec. 31, 2021, there were 336,677 active Access checking 
+accounts. This figure excludes high-yield savings accounts. On Feb. 24, 
+2022, Citi announced plans to eliminate overdraft fees, returned item fees 
+and overdraft protection fees by mid-2022, representing the Company’s 
+continued commitment to expand access to inclusive banking products 
+and services that can help advance economic progress, especially for 
+underbanked and unbanked communities. In addition to eliminating these 
+fees, Citi will continue to offer a robust suite of free overdraft protection 
+services for its consumers. Citi does not track if account holders were 
+formerly unbanked/underbanked.
+• Risk Management > Eliminating Overdraft Fees for Our Customers’  
+Financial Wellness
+• Access Account webpage
+• Citi Retail Banking Overdraft Fees Change
+Number of participants in 
+financial literacy initiatives for 
+unbanked, underbanked, or 
+underserved customers
+Quantitative
+FN-CB-
+240a.4
+Our efforts to support underbanked individuals and small businesses are 
+discussed in our 2021 ESG Report. 
+• Our Commitment to Social Finance
+Contents 
+ESG at Citi 
+Sustainable Finance 
+Sustainable Progress  
+Equitable & Resilient Communities 
+Talent & DEI 
+Risk Management & Responsible Business 
+Appendices
+CITI 2021 ESG REPORT
+150
+

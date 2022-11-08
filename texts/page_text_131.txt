@@ -1,0 +1,46 @@
+Identifying Human Rights Risks in Transactions
+ 
+Citi’s ESRM team screens transactions under the ESRM Policy for potential human rights risks. The specific types of human rights risks we screen for 
+are outlined in the table below. Further data related to ESRM Policy screening can be found in the Environmental and Social Risk Management section.
+When human rights risks are identified for a project-related transaction during screening, the ESRM team may either decline to approve the oppor-
+tunity outright, if the risks are deemed too high to address, or we may outline what further due diligence would be needed for the transaction to 
+proceed. There are a number of reasons why initial opportunities may not move forward, including a client declining to move forward with our due 
+diligence review requirements.
+If an opportunity progresses to the due diligence phase, our requirements include gaining access to project information that allows us to benchmark 
+according to relevant standards, such as the IFC Performance Standards, UN Guiding Principles on Business and Human Rights, ILO Forced Labour 
+Indicators and the Voluntary Principles on Security and Human Rights among other international human rights norms. In project-related lending this 
+due diligence would be supported by a qualified independent consultant. In circumstances where a project is not aligned with applicable international 
+standards, we will not approve financing until we are satisfied that the client has appropriate plans and capacity to mitigate project risks. For 
+example, in 2021 we declined a project-related financing opportunity for an industrial agricultural project in Africa with concerns related to involun-
+tary resettlement, child labor and biodiversity impacts. 
+For general corporate-level transactions (e.g., renewing revolving credit facilities, issuing corporate bonds) that have elevated human rights risks, 
+we have less direct leverage than in project-related financing, but we review our clients’ policies and practices relevant to human rights issues to 
+evaluate their ability to avoid, manage and minimize these risks. We also engage our clients to understand their implementation of those policies and 
+whether they have appropriate staffing to manage these issues, and we review and encourage strong disclosures of human rights policies. 
+Human Rights Risks Screened During Transaction Reviews
+Conflict Risk: Project-induced conflict risk, which may be tied to competition for resources or land
+Cultural Heritage: Properties and sites of archaeological, historical, cultural, artistic and religious significance; 
+unique environmental features and cultural knowledge; intangible forms of culture embodying traditional lifestyles 
+Environmental Justice: Potential environmental risks to historically marginalized communities, especially 
+surrounding industrial developments
+Indigenous Peoples: Concerns regarding the extent to which Indigenous communities are consulted during project 
+development and have consented to impacts to their land, livelihood and cultural heritage
+Labor Risks: Risks related to labor forces used in the construction of projects or other operations, including those 
+associated with forced labor, child labor and human trafficking by project operators and their subcontractors
+Resettlement: Resettlement of local communities, including Indigenous groups, as necessary for project 
+implementation; requires resettlement action plans and should include efforts to gain the free, prior and informed 
+consent of Indigenous communities
+Security Practices: Concerns about how project sponsors engage with public or private security forces protecting 
+project sites
+Water: Project-related impacts that hinder access to water or negatively affect water quality for local communities
+Contents 
+ESG at Citi 
+Sustainable Finance 
+Sustainable Progress  
+Equitable & Resilient Communities 
+Talent & DEI 
+Risk Management & Responsible Business 
+Appendices
+CITI 2021 ESG REPORT
+132
+

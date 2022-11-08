@@ -1,0 +1,169 @@
+2010
+2017 
+2018
+2019
+2020
+2021
+Operating Sq. Ft.
+64,172,247
+48,051,230
+45,137,587
+45,116,344
+42,349,249
+40,746,199
+Headcount
+336,622
+208,043
+199,458
+188,779
+193,989
+200,347
+Energy
+2010
+2017
+2018
+2019
+2020
+2021
+Natural Gas (GWh)
+123
+63
+80
+70
+65
+178
+LP Gas (GWh)
+--
+--
+--
+1
+1
+1
+Fuel Oil (GWh)
+50
+29
+28
+0
+0
+0
+Diesel (GWh)
+--
+--
+--
+32
+30
+32
+Scope 1 Energy (GWh)
+173
+92
+108
+104
+95
+210
+Electricity (GWh)
+1,922
+1,447
+1,374
+1,312
+1,180
+1,111
+District Heating (Steam 
+& Chilled Water) (GWh)
+74
+58
+57
+46
+29
+26
+Scope 2 Energy (GWh)
+1,996
+1,505
+1,431
+1,358
+1,209
+1,137
+Total Energy (GWh)
+2,169
+1,597
+1,539
+1,461
+1,304
+1,348
+CO2e Emissions
+2010
+2017
+2018
+2019
+2020
+2021
+Direct CO2e 
+(GHG Scope 1)
+(Gas & Fuel Oil) 
+38,912
+20,951
+24,132
+23,095
+21,236
+44,683
+Indirect CO2e  
+(GHG Scope 2) 
+(Electricity, Steam  
+& Chilled Water)
+973,169
+677,636
+620,485
+568,780
+505,224
+463,311
+Total CO2e (mt)
+1,012,081
+698,587
+644,618
+591,875
+526,459
+507,994
+Water Consumption
+2010
+2017
+2018
+2019
+2020
+2021
+Potable Water (m3)
+5,899,458
+4,595,506
+4,269,280
+4,205,434
+3,444,961
+3,366,620
+Nonpotable Water (m3)
+15,299
+284,292
+247,846
+277,642
+337,431
+253,010
+Total Water Consumption 
+(m3)
+5,914,757
+4,879,798
+4,517,127
+4,483,076
+3,782,392
+3,619,630
+ABSOLUTE INDICATORS
+Environmental Impact Report
+Note:	Figures	may	not	sum	to	totals	due	to	rounding.
+Note:	Historical	data	can	vary	from	year	to	year	due	to	changes	in	operational	control	as	a	result	of	acquisitions	and	dispositions	of	businesses.	Historical	adjustments	are	not	made	as	
+a	result	of	organic	growth	or	decline	for	businesses	remaining	under	operational	control.
+Contents 
+ESG at Citi 
+Sustainable Finance 
+Sustainable Progress  
+Equitable & Resilient Communities 
+Talent & DEI 
+Risk Management & Responsible Business 
+Appendices
+CITI 2021 ESG REPORT
+58
+

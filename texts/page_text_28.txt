@@ -1,0 +1,41 @@
+• For green buildings, the average household energy savings is equal to the average energy use of a non-LEED-certified 
+building multiplied by the percentage of energy savings by a LEED-certified building. The result is multiplied by the number 
+of square feet and the per square feet CO2 emission factor.
+ 
+• Renewable energy capacity added refers to the size of new renewable energy capacity installed as a result of Citi’s share of 
+renewable energy project financings. 
+ 
+• People impacted refers to the direct number of people benefiting from the use of Citi-financed lending activities for small 
+businesses, renewable energy and energy efficiency projects, affordable housing, and underwritten municipal bond proceeds for 
+transit, water and education projects. 
+• For microfinance lending activities, people impacted is equivalent to the number of entrepreneurs and small farm holders 
+receiving business loans as self-reported by Citi teams.
+• For renewable energy projects and energy efficiency finance, people impacted is equivalent to the number of people whose 
+annual energy usage is supplied by the project. Estimated renewable energy generation annually due to Citi financing is 
+divided by average energy consumption per capita in the country of the project to estimate number of people impacted.
+• For affordable housing, the number of people impacted is calculated using external reference data on average household 
+size multiplied by the number of housing units constructed.
+• For municipal bond financing related to education projects, people impacted is estimated as the number of enrolled school 
+children benefiting from new or repaired school buildings or purchases of equipment. External education data on average 
+student enrollment by school, and the number of schools benefiting from funding as stated in issuance documents, was 
+used for this calculation.
+ 
+• Direct jobs supported refers to the number of jobs supported by the uses of Citi-financed lending or underwritten municipal 
+bond proceeds. Jobs supported are related to Citi’s share of new financing for the projects. For microfinance lending, jobs 
+supported are equal to the number of entrepreneurs and smallholder farmers that received loans. For projects involving new 
+construction or maintenance and repair of affordable housing units, renewable energy generation, schools, transit or water 
+systems in the United States, jobs supported are calculated as Citi-financed expenditures divided by output per worker supplied 
+by the IMPLAN economic modeling system. For projects involving renewable energy generation in locations outside the United 
+States, external data is used to estimate the share of project cost involving installation (labor), and this is divided by average 
+compensation of workers in the country to estimate jobs supported.
+Contents 
+ESG at Citi 
+Sustainable Finance 
+Sustainable Progress  
+Equitable & Resilient Communities 
+Talent & DEI 
+Risk Management & Responsible Business 
+Appendices
+CITI 2021 ESG REPORT
+29
+
