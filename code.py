@@ -8,7 +8,7 @@ import io
 
 from PIL import Image
 
- 
+import os 
 
 # STEP 2
 
@@ -29,6 +29,8 @@ pdf_file = fitz.open(file)
 # STEP 3
 
 # iterate over PDF pages
+os.makedirs("texts", exist_ok=True)
+os.makedirs("images", exist_ok=True)
 
 for page_index in range(len(pdf_file)):
 
@@ -90,4 +92,4 @@ for page_index in range(len(pdf_file)):
 
     # save it to local disk
 
-    image.save(open(f"image{page_index+1}_{image_index}.{image_ext}", "wb"))
+    image.save(open(f"images/image{page_index+1}_{image_index}.{image_ext}", "wb"))
