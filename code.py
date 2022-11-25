@@ -17,20 +17,23 @@ import os
 # File download url: https://www.citigroup.com/citi/about/esg/download/2021/Global-ESG-Report-2021.pdf?ieNocache=248
 
 file = "Global-ESG-Report-2021.pdf"
+# file = "1802.05574v2.pdf"
+file_base_name = file[:file.rfind(".")]
 
- 
+file_path = os.path.join("input_files", file)
 
 # open the file
 
-pdf_file = fitz.open(file)
+pdf_file = fitz.open(file_path)
 
  
 
 # STEP 3
 
 # iterate over PDF pages
-os.makedirs("texts", exist_ok=True)
-os.makedirs("images", exist_ok=True)
+os.makedirs(f"extractions/{file_base_name}/texts", exist_ok=True)
+os.makedirs(f"extractions/{file_base_name}/images", exist_ok=True)
+# os.makedirs("images", exist_ok=True)
 
 for page_index in range(len(pdf_file)):
 
@@ -45,7 +48,7 @@ for page_index in range(len(pdf_file)):
   texts = page.get_text().encode("utf-8")
   print(texts[0])
 #   import json
-  with open(f"texts/page_text_{str(page_index)}.txt", "wb") as f:
+  with open(f"extractions/{file_base_name}/texts/page_text_{str(page_index)}.txt", "wb") as f:
       f.write(texts)
       f.write(bytes((12,)))
  
@@ -94,4 +97,4 @@ for page_index in range(len(pdf_file)):
 
     # save it to local disk
 
-    image.save(open(f"images/image{page_index+1}_{image_index}.{image_ext}", "wb"))
+    image.save(open(f"extractions/{file_base_name}/images/image{page_index+1}_{image_index}.{image_ext}", "wb"))
