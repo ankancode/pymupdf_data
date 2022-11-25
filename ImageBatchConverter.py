@@ -10,7 +10,7 @@ parser = argparse.ArgumentParser(description="Pillow example - batch converter."
 parser.add_argument('--outdir', default='./out', help='Directory to save converted image files')
 parser.add_argument('--outformat', choices=formats, default="JPG",
                     help='Output image format required. The output file will be written with the same base-name as the input file, but with an extension reflecting the format')
-parser.add_argument('--indir', default="./files")
+parser.add_argument('--indir', default="./images")
 args = parser.parse_args()
 
 infiles = []
