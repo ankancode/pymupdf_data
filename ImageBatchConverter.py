@@ -7,7 +7,8 @@ formats = ["BMP", "DIB", "EPS", "GIF", "ICNS", "ICO", "IM", "JPG", "JPEG",
            "J2K", "J2P", "JPX", "MSP", "PCX", "PNG", "PPM", "SGI",
            "SPIDER", "TGA", "TIFF", "WebP", "XBM"]
 parser = argparse.ArgumentParser(description="Pillow example - batch converter.")
-parser.add_argument('--outdir', default='./out', help='Directory to save converted image files')
+os.makedirs("converted_images", exist_ok=True)
+parser.add_argument('--outdir', default='./converted_images', help='Directory to save converted image files')
 parser.add_argument('--outformat', choices=formats, default="JPG",
                     help='Output image format required. The output file will be written with the same base-name as the input file, but with an extension reflecting the format')
 parser.add_argument('--indir', default="./images")
