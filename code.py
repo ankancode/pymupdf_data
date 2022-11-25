@@ -63,6 +63,8 @@ for page_index in range(len(pdf_file)):
   for image_index, img in enumerate(page.get_images(), start=1):
 
    
+    image_rects = page.get_image_rects(img)
+    print(len(image_rects), image_rects)
 
     # get the XREF of the image
 
