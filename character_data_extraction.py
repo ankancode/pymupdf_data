@@ -167,7 +167,28 @@ def get_page_wise_data(all_outputs):
 
                 elif next_element_type == "LTTextBoxHorizontal":
                     # paragraph
-                    pass
+                    # TODO: need to review this part of code, as it might not be correct 
+                    page_height = current_page_height
+                    page_width = current_page_width
+
+                    image_coordinate_top_left_x = previous_element[1]["top_right_x"]
+                    image_coordinate_top_left_y = page_height - previous_element[1]["top_right_y"]
+                    image_coordinate_bottom_right_x = page_width
+                    image_coordinate_bottom_right_y = page_height - next_element[1]["bottom_left_y"]
+
+                    x1 = image_coordinate_top_left_x
+                    y1 = image_coordinate_top_left_y
+                    x2 = image_coordinate_bottom_right_x
+                    y2 = image_coordinate_bottom_right_y
+                    
+                    text = "\n"
+                    current_character_info = {
+                        "character_id": len(page_wise_data[current_page_no]["character_data"]),
+                        "text": text,
+                        "font": f"{font_info}",
+                        "bbox": [round(x1, 3), round(y1, 3), round(x2, 3), round(y2, 3)]
+                    }
+                    page_wise_data[current_page_no]["character_data"].append(current_character_info)
     return page_wise_data
 
 
