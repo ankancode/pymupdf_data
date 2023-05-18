@@ -178,11 +178,19 @@ def extract_character_info(file_path):
     # laparams = LAParams(word_margin=word_margin)
     all_outputs = get_all_outputs(path)
     page_wise_data = get_page_wise_data(all_outputs)
-    return page_wise_data
+    return page_wise_data, all_outputs
 
 
-file_path = r"1802.05574v2.pdf"
-page_wise_data = extract_character_info(file_path)
+if __name__ == "__main__":
+    # file_path = r"1802.05574v2.pdf"
+    file_path = input("file_path: ")
+    filename = os.path.basename(file_path)
+    folder_path = os.path.dirname(file_path)
+    filename_wo_ext, ext = os.path.splitext(filename)
+    page_wise_data, all_outputs = extract_character_info(file_path)
 
-with open("page_wise_data.json", "w", encoding="utf-8") as f:
-    json.dump(page_wise_data, f, indent=4)
+    with open(f"{filename_wo_ext}_all_outputs.json", "w", encoding="utf-8") as f:
+        f.write(json.dumps(all_outputs, indent=4))
+
+    with open(f"{filename_wo_ext}_page_wise_data.json", "w", encoding="utf-8") as f:
+        json.dump(page_wise_data, f, indent=4)
