@@ -181,6 +181,64 @@ def extract_character_info(file_path):
     return page_wise_data, all_outputs
 
 
+def extract_word_info(page_wise_data):
+    page_wise_words = {}
+    for page_no in page_wise_data:
+        current_page_data = page_wise_data[page_no]
+        character_data = current_page_data["character_data"]
+        current_word_id = None
+        word_groupings = [[]]
+        for i in range(len(character_data)):
+            current_character_info = character_data[i]
+            current_text = current_character_info["text"]
+            if current_text != " " and current_text != "\n":
+                character_entry = {"is_word_terminating_character": False, "data": current_character_info}
+                if len(word_groupings) > 1:
+                    # when last entry in the previous list was a terminating character
+                    if word_groupings[-1][-1]["is_word_terminating_character"]:
+                        word_groupings.append([])
+                        word_groupings[-1].append(character_entry)
+                    else:
+                        word_groupings[-1].append(character_entry)
+                else:
+                    word_groupings[-1].append(character_entry)
+
+            elif current_text == " " or current_text == "\n":
+                character_entry = {"is_word_terminating_character": True, "data": current_character_info}
+                # the issue of last entry being a terminating or non-terminating character is resolved when inserting characters
+                word_groupings.append([])
+                word_groupings[-1].append(character_entry)
+
+        all_words = []
+        word_id = 0
+        for word_grouping in word_groupings:
+            if not word_grouping[0]["is_word_terminating_character"]:
+                current_word_top_left_x = word_grouping[0]["data"]["bbox"][0]
+                current_word_top_left_y = word_grouping[0]["data"]["bbox"][1]
+                current_word_bottom_right_x = word_grouping[-1]["data"]["bbox"][2]
+                current_word_bottom_right_y = word_grouping[-1]["data"]["bbox"][3]
+                current_font = word_grouping[0]["data"]["font"]
+                current_word = "".join([character_entry["data"]["text"] for character_entry in word_grouping])
+                word_id += 1
+                all_words.append({
+                    "word_id": word_id,
+                    "text": current_word,
+                    "font": current_font,
+                    "bbox": [current_word_top_left_x, current_word_top_left_y, current_word_bottom_right_x, current_word_bottom_right_y]
+                })
+            else:
+                word_id += 1
+                all_words.append({
+                    "word_id": word_id,
+                    "text": word_grouping[0]["data"]["text"],
+                    "font": word_grouping[0]["data"]["font"],
+                    "bbox": word_grouping[0]["data"]["bbox"]
+                })
+
+        page_wise_words[page_no] = all_words
+    return page_wise_words
+
+
 if __name__ == "__main__":
     # file_path = r"1802.05574v2.pdf"
     file_path = input("file_path: ")
@@ -188,9 +246,20 @@ if __name__ == "__main__":
     folder_path = os.path.dirname(file_path)
     filename_wo_ext, ext = os.path.splitext(filename)
     page_wise_data, all_outputs = extract_character_info(file_path)
+    page_wise_words = extract_word_info(page_wise_data)
 
     with open(f"{filename_wo_ext}_all_outputs.json", "w", encoding="utf-8") as f:
         f.write(json.dumps(all_outputs, indent=4))
 
     with open(f"{filename_wo_ext}_page_wise_data.json", "w", encoding="utf-8") as f:
         json.dump(page_wise_data, f, indent=4)
+
+    
+    with open(f"{filename_wo_ext}_page_wise_words.json", "w", encoding="utf-8") as f:
+        json.dump(page_wise_words, f, indent=4)
+    
+    with open("page_words.txt", "w", encoding="utf-8") as f:
+        for page_no in page_wise_words:
+            for word in page_wise_words[page_no]:
+                f.write(word["text"])
+            f.write("="*150)
