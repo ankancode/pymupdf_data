@@ -95,7 +95,7 @@ def get_page_wise_data(all_outputs):
             image_coordinate_top_left_x = bbox["bottom_left_x"]
             image_coordinate_top_left_y = page_height - bbox["top_right_y"]
             image_coordinate_bottom_right_x = bbox["top_right_x"]
-            image_coordinate_bottom_right_y = page_height - bbox["bottom_left_x"]
+            image_coordinate_bottom_right_y = page_height - bbox["bottom_left_y"]
             
             x1 = image_coordinate_top_left_x
             y1 = image_coordinate_top_left_y
