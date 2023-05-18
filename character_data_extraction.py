@@ -2,6 +2,7 @@ from pathlib import Path
 from typing import Iterable, Any
 from pdfminer.high_level import extract_pages
 import json
+import os
 
 
 def show_ltitem_hierarchy(o: Any, all_outputs):
@@ -109,7 +110,7 @@ def get_page_wise_data(all_outputs):
                 "character_id": len(page_wise_data[current_page_no]["character_data"]),
                 "text": text,
                 "font": f"{font_info}",
-                "bbox": f"{round(x1, 3)}, {round(y1, 3)}, {round(x2, 3)}, {round(y2, 3)}"
+                "bbox": [round(x1, 3), round(y1, 3), round(x2, 3), round(y2, 3)]
             }
             page_wise_data[current_page_no]["character_data"].append(current_character_info)
         elif current_element_type == "LTAnno":
@@ -136,7 +137,7 @@ def get_page_wise_data(all_outputs):
                         "character_id": len(page_wise_data[current_page_no]["character_data"]),
                         "text": text,
                         "font": f"{font_info}",
-                        "bbox": f"{round(x1, 3)}, {round(y1, 3)}, {round(x2, 3)}, {round(y2, 3)}"
+                        "bbox": [round(x1, 3), round(y1, 3), round(x2, 3), round(y2, 3)]
                     }
                     page_wise_data[current_page_no]["character_data"].append(current_character_info)
 
@@ -160,7 +161,7 @@ def get_page_wise_data(all_outputs):
                         "character_id": len(page_wise_data[current_page_no]["character_data"]),
                         "text": text,
                         "font": f"{font_info}",
-                        "bbox": f"{round(x1, 3)}, {round(y1, 3)}, {round(x2, 3)}, {round(y2, 3)}"
+                        "bbox": [round(x1, 3), round(y1, 3), round(x2, 3), round(y2, 3)]
                     }
                     page_wise_data[current_page_no]["character_data"].append(current_character_info)
 
