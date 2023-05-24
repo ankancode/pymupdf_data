@@ -33,10 +33,9 @@ def convert_to_tabula_coordinates(bbox, image_dpi, pdf_dpi=72):
     return (top, left, bottom, right)
 
 
-def extract_tables_with_coordinates(file_path, coordinates, page_number=18):
+def extract_tables_with_coordinates(file_path, coordinates, page_number=1, tabula_server_url="http://localhost:8080"):
     top, left, bottom, right = map(float, coordinates)
-    url = "http://localhost:8090"
-    java_options = "-Dfile.encoding=UTF8 -Dtabula.server={}".format(url)
+    java_options = "-Dfile.encoding=UTF8 -Dtabula.server={}".format(tabula_server_url)
     # Guess tables from a pdf
     # stream_tables = tabula.read_pdf(file_path, pages=page_number, stream=True, guess=True, java_options=java_options)
     # lattice_tables = tabula.read_pdf(file_path, pages=page_number, lattice=True, guess=True, java_options=java_options)
@@ -53,5 +52,5 @@ if __name__ == "__main__":
     tabula_bbox = convert_to_tabula_coordinates(image_bbox, image_dpi)
     print(image_bbox)
     print(tabula_bbox)
-    stream_tables, lattice_tables = extract_tables_with_coordinates(file_path, tabula_bbox, 18)
-    print(stream_tables)
+    tabula_server_url = "http://localhost:8080"
+    stream_tables, lattice_tables = extract_tables_with_coordinates(file_path, tabula_bbox, 18, tabula_server_url)
