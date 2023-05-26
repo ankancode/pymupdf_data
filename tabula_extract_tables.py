@@ -1,7 +1,8 @@
+import json
 import tabula
 
 
-def convert_to_tabula_coordinates(bbox, image_dpi, pdf_dpi=72):
+def convert_to_tabula_coordinates(bbox, image_dpi, margin=(0, 0, 0, 0), pdf_dpi=72):
     """
     Convert bounding box from image coordinates to PDF coordinates.
 
@@ -18,6 +19,7 @@ def convert_to_tabula_coordinates(bbox, image_dpi, pdf_dpi=72):
     image_to_pdf_conversion_factor = pdf_dpi/image_dpi
 
     x1, y1, x2, y2 = bbox
+    x1, y1, x2, y2 = x1 - margin[0], y1 - margin[1], x2 + margin[2], y2 + margin[3]
 
     # Convert image coordinates to PDF coordinates
     x1_pdf = x1 * image_to_pdf_conversion_factor
@@ -48,9 +50,16 @@ def extract_tables_with_coordinates(file_path, coordinates, page_number=1, tabul
 if __name__ == "__main__":
     file_path = input("pdf_path: ")
     # image_bbox, image_dpi = (60, 140, 445, 390), 72
-    image_bbox, image_dpi = (80, 190, 590, 515), 96
-    tabula_bbox = convert_to_tabula_coordinates(image_bbox, image_dpi)
+    # image_bbox, image_dpi = (80, 190, 590, 515), 96
+    tables_detection_json_path = r""
+    with open(tables_detection_json_path, "r", encoding="utf-8") as f:
+        tables_detection_json = json.loads(f.read())
+    image_bbox = tables_detection_json[0]["bbox"]
+    image_dpi = 96
+    tabula_bbox = convert_to_tabula_coordinates(image_bbox, image_dpi, margin=(10, 10, 10, 10))
     print(image_bbox)
     print(tabula_bbox)
     tabula_server_url = "http://localhost:8080"
     stream_tables, lattice_tables = extract_tables_with_coordinates(file_path, tabula_bbox, 18, tabula_server_url)
+    print(stream_tables)
+    print(lattice_tables)
