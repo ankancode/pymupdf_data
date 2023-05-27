@@ -57,10 +57,11 @@ if __name__ == "__main__":
     filename_wo_ext, ext = os.path.splitext(filename)
     output_folder_path = os.path.join(folder_path, filename_wo_ext)
     os.makedirs(output_folder_path, exist_ok=True)
-    for page_no in page_wise_words:
-        current_page_data = page_wise_words[page_no]
-        page_pdf_path = os.path.join(output_folder_path, f"{filename_wo_ext}_{str(page_no).zfill(3)}.pdf")
-        convert_json_to_pdf(current_page_data, output_file=page_pdf_path)
+    # for page_no in page_wise_words:
+    page_no = 18
+    current_page_data = page_wise_words
+    page_pdf_path = os.path.join(output_folder_path, f"{filename_wo_ext}_{str(page_no).zfill(3)}.pdf")
+    convert_json_to_pdf(current_page_data, output_file=page_pdf_path)
     # Example JSON data
     # json_data = [
     #     {
