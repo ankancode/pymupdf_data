@@ -20,6 +20,7 @@ def create_words_json(file_path, output_folder):
         padded_page_no = "{:{fill_char}3}".format(page_no, fill_char=fill_char)
         with open(os.path.join(file_result_folder, f"{filename_wo_ext}_{padded_page_no}_words.json"), "w", encoding="utf-8") as f:
             f.write(json.dumps(page_words, indent=4))
+    return len(page_wise_words.keys())
 
 
 if __name__ == "__main__":
