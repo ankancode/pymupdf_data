@@ -76,16 +76,17 @@ def run_pipeline(file_path, images_output_folder, words_json_output_folder, bbox
             tabula_bbox = convert_to_tabula_coordinates(image_bbox, image_dpi, margin=(10, 10, 10, 10))
             stream_tables, lattice_tables = extract_tables_with_coordinates(file_path, tabula_bbox, page_no)
 
-            lattice_table_name = f"{filename_wo_ext}_{z_filled_page_no}_lattice_table_{z_filled_table_no}"
-            stream_table_name = f"{filename_wo_ext}_{z_filled_page_no}_stream_table_{z_filled_table_no}"
 
-            lattice_table_path = os.path.join(tabula_tables_home, f"{lattice_table_name}")
-            stream_table_path = os.path.join(tabula_tables_home, f"{stream_table_name}.csv")
-
-            for lattice_table in lattice_tables:
+            for lattice_table_no, lattice_table in enumerate(lattice_tables):
+                z_filled_lattice_table_no = "{:{fill_char}3}".format(lattice_table_no, fill_char=fill_char)
+                lattice_table_name = f"{filename_wo_ext}_{z_filled_page_no}_detected_region_{z_filled_table_no}_lattice_table_{z_filled_lattice_table_no}"
+                lattice_table_path = os.path.join(tabula_tables_home, f"{lattice_table_name}.csv")
                 # print(lattice_table_path)
                 lattice_table.to_csv(lattice_table_path, encoding='utf-8', index=False)
-            for stream_table in stream_tables:
+            for stream_table_no, stream_table in enumerate(stream_tables):
+                z_filled_stream_table_no = "{:{fill_char}3}".format(stream_table_no, fill_char=fill_char)
+                stream_table_name = f"{filename_wo_ext}_{z_filled_page_no}_detected_region_{z_filled_table_no}_stream_table_{z_filled_stream_table_no}"
+                stream_table_path = os.path.join(tabula_tables_home, f"{stream_table_name}.csv")
                 # print(stream_table_path)
                 stream_table.to_csv(stream_table_path, encoding='utf-8', index=False)
 
