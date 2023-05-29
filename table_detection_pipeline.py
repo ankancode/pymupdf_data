@@ -9,8 +9,6 @@ from create_pdf_from_ocr_json import convert_json_to_pdf
 
 def run_table_detection(image_dir, words_dir, out_dir):
     python_path = r"D:\Envs\table_transformer_env\Scripts\python.exe"
-    script_home = r"src"
-    script_path = r"src\inference.py"
     script_name = r"inference.py"
     detection_config_path = r"detection_config.json"
     detection_model_path = r"../pubtables1m_detection_detr_r18.pth"
@@ -98,6 +96,16 @@ def run_pipeline(file_path, images_output_folder, words_json_output_folder, bbox
             outside_pdf_path = os.path.join(outside_pdf_home, f"{outside_json_filename}.pdf")
             # convert_json_to_pdf(inside_json, inside_pdf_path)
             # convert_json_to_pdf(outside_json, outside_pdf_path)
+
+
+def get_folder_path_input(folder_name):
+    folder_path = input(f"{folder_name}: ")
+    if folder_path == "":
+        current_folder_path = os.path.dirname(os.path.abspath(__file__))
+        folder_path = os.path.join(current_folder_path, "table_detection_home", folder_name)
+        os.makedirs(folder_path, exist_ok=True)
+        print(folder_path)
+    return folder_path
 
 
 if __name__ == "__main__":
