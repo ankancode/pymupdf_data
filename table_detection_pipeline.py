@@ -5,6 +5,7 @@ from process_pdf_pdfminer_to_table_transformer import create_words_json
 from ghostscript_pdf_to_image import convert_pdf_to_image
 from get_text_between_bbox import get_pdf_coordinates_from_image_coordinates, get_inside_json, get_outside_json
 from create_pdf_from_ocr_json import convert_json_to_pdf
+from tabula_extract_tables import convert_to_tabula_coordinates, extract_tables_with_coordinates
 
 
 def run_table_detection(image_dir, words_dir, out_dir):
@@ -20,7 +21,7 @@ def run_table_detection(image_dir, words_dir, out_dir):
     print(f"\"{python_path}\" {script_name} --mode detect --detection_config_path \"{detection_config_path}\" --detection_model_path \"{detection_model_path}\" --detection_device \"{detection_device}\" --image_dir \"{image_dir}\" --out_dir \"{out_dir}\" --words_dir \"{words_dir}\" --crop_padding {crop_padding} {options}")
 
 
-def run_pipeline(file_path, images_output_folder, words_json_output_folder, bboxes_json_output_folder, inside_json_output_folder, outside_json_output_folder, inside_pdf_output_folder, outside_pdf_output_folder):
+def run_pipeline(file_path, images_output_folder, words_json_output_folder, bboxes_json_output_folder, inside_json_output_folder, outside_json_output_folder, inside_pdf_output_folder, outside_pdf_output_folder, tabula_output_folder):
     filename = os.path.basename(file_path)
     folder_path = os.path.dirname(file_path)
     filename_wo_ext, ext = os.path.splitext(filename)
@@ -32,11 +33,13 @@ def run_pipeline(file_path, images_output_folder, words_json_output_folder, bbox
     outside_json_home = os.path.join(outside_json_output_folder, filename_wo_ext)
     inside_pdf_home = os.path.join(inside_pdf_output_folder, filename_wo_ext)
     outside_pdf_home = os.path.join(outside_pdf_output_folder, filename_wo_ext)
+    tabula_tables_home = os.path.join(tabula_output_folder, filename_wo_ext)
     os.makedirs(bboxes_json_home, exist_ok=True)
     os.makedirs(inside_json_home, exist_ok=True)
     os.makedirs(outside_json_home, exist_ok=True)
     os.makedirs(inside_pdf_home, exist_ok=True)
     os.makedirs(outside_pdf_home, exist_ok=True)
+    os.makedirs(tabula_tables_home, exist_ok=True)
 
     pdf_dpi = 72
     image_dpi = 96
@@ -45,10 +48,8 @@ def run_pipeline(file_path, images_output_folder, words_json_output_folder, bbox
     convert_pdf_to_image(file_path, images_output_folder, resolution=image_dpi, image_extension="jpg")
     pages = create_words_json(file_path, words_json_output_folder)
     run_table_detection(images_home, words_json_home, bboxes_json_home)
-    # exit()
-    import time
-    time.sleep(60)
 
+    input("press any key when table detection pipeline is complete")
 
     for page_no in range(1, pages+1):
         z_filled_page_no = "{:{fill_char}3}".format(page_no, fill_char=fill_char)
@@ -72,7 +73,21 @@ def run_pipeline(file_path, images_output_folder, words_json_output_folder, bbox
             if score < 0.95:
                 print(z_filled_page_no, z_filled_table_no, score)
                 continue
+            tabula_bbox = convert_to_tabula_coordinates(image_bbox, image_dpi, margin=(10, 10, 10, 10))
+            stream_tables, lattice_tables = extract_tables_with_coordinates(file_path, tabula_bbox, page_no)
 
+            lattice_table_name = f"{filename_wo_ext}_{z_filled_page_no}_lattice_table_{z_filled_table_no}"
+            stream_table_name = f"{filename_wo_ext}_{z_filled_page_no}_stream_table_{z_filled_table_no}"
+
+            lattice_table_path = os.path.join(tabula_tables_home, f"{lattice_table_name}")
+            stream_table_path = os.path.join(tabula_tables_home, f"{stream_table_name}.csv")
+
+            for lattice_table in lattice_tables:
+                # print(lattice_table_path)
+                lattice_table.to_csv(lattice_table_path, encoding='utf-8', index=False)
+            for stream_table in stream_tables:
+                # print(stream_table_path)
+                stream_table.to_csv(stream_table_path, encoding='utf-8', index=False)
 
             # the outer_bbox coordinates have origin at top left corner, and are for pdf units (72 dpi)
             outer_bbox = get_pdf_coordinates_from_image_coordinates(image_bbox, image_dpi)
@@ -117,5 +132,6 @@ if __name__ == "__main__":
     outside_json_output_folder = get_folder_path_input("outside_json_output_folder")
     inside_pdf_output_folder = get_folder_path_input("inside_pdf_output_folder")
     outside_pdf_output_folder = get_folder_path_input("outside_pdf_output_folder")
+    tabula_output_folder = get_folder_path_input("tabula_output_folder")
 
-    run_pipeline(file_path, images_output_folder, words_json_output_folder, bboxes_json_output_folder, inside_json_output_folder, outside_json_output_folder, inside_pdf_output_folder, outside_pdf_output_folder)
+    run_pipeline(file_path, images_output_folder, words_json_output_folder, bboxes_json_output_folder, inside_json_output_folder, outside_json_output_folder, inside_pdf_output_folder, outside_pdf_output_folder, tabula_output_folder)
