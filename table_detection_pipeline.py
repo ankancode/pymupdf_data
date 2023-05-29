@@ -48,8 +48,8 @@ def run_pipeline(file_path, images_output_folder, words_json_output_folder, bbox
     pages = create_words_json(file_path, words_json_output_folder)
     run_table_detection(images_home, words_json_home, bboxes_json_home)
     # exit()
-    # import time
-    # time.sleep(60)
+    import time
+    time.sleep(60)
 
 
     for page_no in range(1, pages+1):
@@ -70,6 +70,11 @@ def run_pipeline(file_path, images_output_folder, words_json_output_folder, bbox
             z_filled_table_no = "{:{fill_char}3}".format(table_no, fill_char=fill_char)
             # image_bbox are with origin at top left corner
             image_bbox = bboxes_json[table_no]["bbox"]
+            score = bboxes_json[table_no]["score"]
+            if score < 0.95:
+                print(z_filled_page_no, z_filled_table_no, score)
+                continue
+
 
             # the outer_bbox coordinates have origin at top left corner, and are for pdf units (72 dpi)
             outer_bbox = get_pdf_coordinates_from_image_coordinates(image_bbox, image_dpi)
