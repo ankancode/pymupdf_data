@@ -12,14 +12,14 @@ def run_table_detection(image_dir, words_dir, out_dir):
     script_home = r"src"
     script_path = r"src\inference.py"
     script_name = r"inference.py"
-    detection_config_path = r"src\detection_config.json"
-    detection_model_path = r"pubtables1m_detection_detr_r18.pth"
+    detection_config_path = r"detection_config.json"
+    detection_model_path = r"../pubtables1m_detection_detr_r18.pth"
     detection_device = "cpu"
     crop_padding = 10
     options = "-l -o -p -z -m -c"
     # results = subprocess.run([f"{python_path}", f"{script_path}", "--mode detect", f"--detection_config_path {detection_config_path}", f"--detection_model_path {detection_model_path}", f"--detection_device {detection_device}", f"--image_dir {image_dir}", f"--out_dir {out_dir}", f"--words_dir {words_dir}", f"--crop_padding {crop_padding}"], stdout=subprocess.PIPE, shell=True, cwd=script_home)
     # print(results.stdout.decode("utf-8"))
-    print(f"python {script_name} --mode detect --detection_config_path \"{detection_config_path}\" --detection_model_path \"{detection_model_path}\" --detection_device \"{detection_device}\" --image_dir \"{image_dir}\" --out_dir \"{out_dir}\" --words_dir \"{words_dir}\" --crop_padding {crop_padding} {options}")
+    print(f"\"{python_path}\" {script_name} --mode detect --detection_config_path \"{detection_config_path}\" --detection_model_path \"{detection_model_path}\" --detection_device \"{detection_device}\" --image_dir \"{image_dir}\" --out_dir \"{out_dir}\" --words_dir \"{words_dir}\" --crop_padding {crop_padding} {options}")
 
 
 def run_pipeline(file_path, images_output_folder, words_json_output_folder, bboxes_json_output_folder, inside_json_output_folder, outside_json_output_folder, inside_pdf_output_folder, outside_pdf_output_folder):
@@ -97,12 +97,12 @@ def run_pipeline(file_path, images_output_folder, words_json_output_folder, bbox
 
 if __name__ == "__main__":
     file_path = input("file_path: ")
-    images_output_folder = input("images_output_folder: ")
-    words_json_output_folder = input("words_json_output_folder: ")
-    bboxes_json_output_folder = input("bboxes_json_output_folder: ")
-    inside_json_output_folder = input("inside_json_output_folder: ")
-    outside_json_output_folder = input("outside_json_output_folder: ")
-    inside_pdf_output_folder = input("inside_pdf_output_folder: ")
-    outside_pdf_output_folder = input("outside_pdf_output_folder: ")
+    images_output_folder = get_folder_path_input("images_output_folder")
+    words_json_output_folder = get_folder_path_input("words_json_output_folder")
+    bboxes_json_output_folder = get_folder_path_input("bboxes_json_output_folder")
+    inside_json_output_folder = get_folder_path_input("inside_json_output_folder")
+    outside_json_output_folder = get_folder_path_input("outside_json_output_folder")
+    inside_pdf_output_folder = get_folder_path_input("inside_pdf_output_folder")
+    outside_pdf_output_folder = get_folder_path_input("outside_pdf_output_folder")
 
     run_pipeline(file_path, images_output_folder, words_json_output_folder, bboxes_json_output_folder, inside_json_output_folder, outside_json_output_folder, inside_pdf_output_folder, outside_pdf_output_folder)
