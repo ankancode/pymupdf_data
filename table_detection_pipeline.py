@@ -85,7 +85,7 @@ def run_pipeline(file_path, images_output_folder, words_json_output_folder, bbox
                 lattice_table.to_csv(lattice_table_path, encoding='utf-8', index=False)
             for stream_table_no, stream_table in enumerate(stream_tables):
                 z_filled_stream_table_no = "{:{fill_char}3}".format(stream_table_no, fill_char=fill_char)
-                stream_table_name = f"{filename_wo_ext}_{z_filled_page_no}_detected_region_{z_filled_table_no}_stream_table_{z_filled_stream_table_no}"
+                stream_table_name = f"{filename_wo_ext}_{z_filled_page_no}_detected_region_{z_filled_table_no}_stream_table_{z_filled_stream_table_no}.csv"
                 stream_table_path = os.path.join(tabula_tables_home, f"{stream_table_name}.csv")
                 # print(stream_table_path)
                 stream_table.to_csv(stream_table_path, encoding='utf-8', index=False)
