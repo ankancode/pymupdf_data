@@ -10,6 +10,7 @@ from tabula_extract_tables import convert_to_tabula_coordinates, extract_tables_
 
 def run_table_detection(image_dir, words_dir, out_dir):
     python_path = r"D:\Envs\table_transformer_env\Scripts\python.exe"
+    script_home = r"..\table-transformer\src"
     script_name = r"inference.py"
     detection_config_path = r"detection_config.json"
     detection_model_path = r"../pubtables1m_detection_detr_r18.pth"
@@ -18,6 +19,7 @@ def run_table_detection(image_dir, words_dir, out_dir):
     options = "-l -o -p -z -m -c"
     # results = subprocess.run([f"{python_path}", f"{script_path}", "--mode detect", f"--detection_config_path {detection_config_path}", f"--detection_model_path {detection_model_path}", f"--detection_device {detection_device}", f"--image_dir {image_dir}", f"--out_dir {out_dir}", f"--words_dir {words_dir}", f"--crop_padding {crop_padding}"], stdout=subprocess.PIPE, shell=True, cwd=script_home)
     # print(results.stdout.decode("utf-8"))
+    print(f"cd \"{script_home}\"\n")
     print(f"\"{python_path}\" {script_name} --mode detect --detection_config_path \"{detection_config_path}\" --detection_model_path \"{detection_model_path}\" --detection_device \"{detection_device}\" --image_dir \"{image_dir}\" --out_dir \"{out_dir}\" --words_dir \"{words_dir}\" --crop_padding {crop_padding} {options}")
 
 
@@ -124,8 +126,17 @@ def get_folder_path_input(folder_name):
     return folder_path
 
 
+def run_pipeline_for_a_folder_of_pdfs(folder_path, images_output_folder, words_json_output_folder, bboxes_json_output_folder, inside_json_output_folder, outside_json_output_folder, inside_pdf_output_folder, outside_pdf_output_folder, tabula_output_folder):
+    files = os.listdir(folder_path)
+    for file in files:
+        file_path = os.path.join(folder_path, file)
+        run_pipeline(file_path, images_output_folder, words_json_output_folder, bboxes_json_output_folder, inside_json_output_folder, outside_json_output_folder, inside_pdf_output_folder, outside_pdf_output_folder, tabula_output_folder)
+        print(f"completed for file: {file}")
+
+
 if __name__ == "__main__":
-    file_path = input("file_path: ")
+    # file_path = input("file_path: ")
+    folder_path = input("folder_path: ")
     images_output_folder = get_folder_path_input("images_output_folder")
     words_json_output_folder = get_folder_path_input("words_json_output_folder")
     bboxes_json_output_folder = get_folder_path_input("bboxes_json_output_folder")
@@ -135,4 +146,5 @@ if __name__ == "__main__":
     outside_pdf_output_folder = get_folder_path_input("outside_pdf_output_folder")
     tabula_output_folder = get_folder_path_input("tabula_output_folder")
 
-    run_pipeline(file_path, images_output_folder, words_json_output_folder, bboxes_json_output_folder, inside_json_output_folder, outside_json_output_folder, inside_pdf_output_folder, outside_pdf_output_folder, tabula_output_folder)
+    # run_pipeline(file_path, images_output_folder, words_json_output_folder, bboxes_json_output_folder, inside_json_output_folder, outside_json_output_folder, inside_pdf_output_folder, outside_pdf_output_folder, tabula_output_folder)
+    run_pipeline_for_a_folder_of_pdfs(folder_path, images_output_folder, words_json_output_folder, bboxes_json_output_folder, inside_json_output_folder, outside_json_output_folder, inside_pdf_output_folder, outside_pdf_output_folder, tabula_output_folder)
