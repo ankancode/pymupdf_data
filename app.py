@@ -36,7 +36,7 @@ def format_passages(passages):
 def main():
     st.title("Question and Passage Feedback")
     initial_sl_no = 1
-    if st.session_state.serial_number:
+    if "serial_number" in st.session_state:
         initial_sl_no = st.session_state.serial_number
 
     data = get_data(initial_sl_no)
