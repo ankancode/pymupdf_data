@@ -1,14 +1,16 @@
 import streamlit as st
 import requests
-import random
+
 
 API_URL = "http://localhost:8000"
+
 
 def get_data(serial_number):
     # Make a request to the API to get paginated data
     response = requests.get(API_URL, params={"serial_number": serial_number})
     data = response.json()
     return data
+
 
 def save_feedback(feedback):
     # Make an API call to save user's feedback
@@ -30,30 +32,40 @@ def format_passages(passages):
         formatted_passages += f'<div style="background-color:{color}; padding: 10px; border-radius: 5px;">Rank {i}: {formatted_passage}</div>'
     return formatted_passages
 
+
 def main():
     st.title("Question and Passage Feedback")
-
     initial_sl_no = 1
-
     if st.session_state.serial_number:
         initial_sl_no = st.session_state.serial_number
-    
+
     data = get_data(initial_sl_no)
-    print("here")
     if data:
         for entry in data:
-            st.subheader(f"Question: {entry['Question']}")
             st.write(f"Serial Number: {entry['Serial Number']}")
-
+            st.subheader(f"Question: {entry['Question']}")
             # Display the ordered list of passages
             st.subheader("Passages:")
 
-            formatted_passages = format_passages(entry["passages"].split(';'))
-            st.markdown(formatted_passages, unsafe_allow_html=True)
+            passages_list = entry["Passages"].split(";")
+            passage_id_list = list(map(int, entry["Passage IDs"].split(";")))
+
+            passage_text_passage_id_mapping = {}
+            for passage_text, passage_id in zip(passages_list, passage_id_list):
+                passage_text_passage_id_mapping[passage_text] = passage_id
             
-            # Get user feedback
-            st.subheader("Rank the passage (0-5)")
-            passage_rank = st.slider("0 - relevant paragraph missing", 0, 5)
+            checkbox_states = []
+            for passage_id, passage_text in zip(passage_id_list, passages_list):
+                checkbox_state = st.checkbox(f"{passage_id}: {passage_text}")
+                checkbox_states.append(checkbox_state)
+            
+            selected_passage_ids = []
+            for i, checkbox_state in enumerate(checkbox_states):
+                if checkbox_state:
+                    selected_passage_id = passage_id_list[i]
+                    selected_passage_ids.append(selected_passage_id)
+            
+            st.write("Selected options:", selected_passage_ids)
 
             st.subheader("Expected Answer")
             st.write(entry["Expected Answer"])
@@ -73,7 +85,7 @@ def main():
             if st.button("Submit"):
                 feedback = {
                     "serial_number": entry['Serial Number'],
-                    "passage_rank": passage_rank,
+                    "selected_passage_ids": selected_passage_ids,
                     "generated_answer_feedback": generated_answer_feedback,
                     "remark": remark
                 }
@@ -98,4 +110,6 @@ def main():
 if __name__ == "__main__":
     if "serial_number" not in st.session_state:
         st.session_state.serial_number = 1
+    if "user_passages" not in st.session_state:
+        st.session_state.user_passages = []
     main()
