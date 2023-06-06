@@ -6,6 +6,7 @@ from ghostscript_pdf_to_image import convert_pdf_to_image
 from get_text_between_bbox import get_pdf_coordinates_from_image_coordinates, get_inside_json, get_outside_json
 from create_pdf_from_ocr_json import convert_json_to_pdf
 from tabula_extract_tables import convert_to_tabula_coordinates, extract_tables_with_coordinates
+from tqdm import tqdm
 
 
 def run_table_detection(image_dir, words_dir, out_dir):
@@ -21,9 +22,12 @@ def run_table_detection(image_dir, words_dir, out_dir):
            '--detection_model_path', f'{detection_model_path}', '--detection_device', f'{detection_device}',
            '--image_dir', f'{image_dir}', '--out_dir', f'{out_dir}', '--words_dir', f'{words_dir}', '--crop_padding', f'{crop_padding}',
            *options]
-    result = subprocess.run(command, stdout=subprocess.PIPE, cwd=script_home)
-    output = result.stdout.decode('utf-8')
-    print(output)
+    try:
+        result = subprocess.run(command, stdout=subprocess.PIPE, cwd=script_home)
+        output = result.stdout.decode('utf-8')
+        print(output)
+    except Exception as e:
+        print(e)
 
 
 def run_pipeline(file_path, images_output_folder, words_json_output_folder, bboxes_json_output_folder, inside_json_output_folder, outside_json_output_folder, inside_pdf_output_folder, outside_pdf_output_folder, tabula_output_folder):
@@ -131,7 +135,7 @@ def get_folder_path_input(folder_name):
 
 def run_pipeline_for_a_folder_of_pdfs(folder_path, images_output_folder, words_json_output_folder, bboxes_json_output_folder, inside_json_output_folder, outside_json_output_folder, inside_pdf_output_folder, outside_pdf_output_folder, tabula_output_folder):
     files = os.listdir(folder_path)
-    for file in files:
+    for file in tqdm(files):
         file_path = os.path.join(folder_path, file)
         run_pipeline(file_path, images_output_folder, words_json_output_folder, bboxes_json_output_folder, inside_json_output_folder, outside_json_output_folder, inside_pdf_output_folder, outside_pdf_output_folder, tabula_output_folder)
         print(f"completed for file: {file}")
