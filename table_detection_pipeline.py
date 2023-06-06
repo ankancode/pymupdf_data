@@ -16,11 +16,14 @@ def run_table_detection(image_dir, words_dir, out_dir):
     detection_model_path = r"../pubtables1m_detection_detr_r18.pth"
     detection_device = "cpu"
     crop_padding = 10
-    options = "-l -o -p -z -m -c"
-    # results = subprocess.run([f"{python_path}", f"{script_path}", "--mode detect", f"--detection_config_path {detection_config_path}", f"--detection_model_path {detection_model_path}", f"--detection_device {detection_device}", f"--image_dir {image_dir}", f"--out_dir {out_dir}", f"--words_dir {words_dir}", f"--crop_padding {crop_padding}"], stdout=subprocess.PIPE, shell=True, cwd=script_home)
-    # print(results.stdout.decode("utf-8"))
-    print(f"cd \"{script_home}\"\n")
-    print(f"\"{python_path}\" {script_name} --mode detect --detection_config_path \"{detection_config_path}\" --detection_model_path \"{detection_model_path}\" --detection_device \"{detection_device}\" --image_dir \"{image_dir}\" --out_dir \"{out_dir}\" --words_dir \"{words_dir}\" --crop_padding {crop_padding} {options}")
+    options = ["-l", "-o", "-p", "-z", "-m", "-c"]
+    command = [f'{python_path}', f'{script_name}', '--mode', 'detect', '--detection_config_path', f'{detection_config_path}',
+           '--detection_model_path', f'{detection_model_path}', '--detection_device', f'{detection_device}',
+           '--image_dir', f'{image_dir}', '--out_dir', f'{out_dir}', '--words_dir', f'{words_dir}', '--crop_padding', f'{crop_padding}',
+           *options]
+    result = subprocess.run(command, stdout=subprocess.PIPE, cwd=script_home)
+    output = result.stdout.decode('utf-8')
+    print(output)
 
 
 def run_pipeline(file_path, images_output_folder, words_json_output_folder, bboxes_json_output_folder, inside_json_output_folder, outside_json_output_folder, inside_pdf_output_folder, outside_pdf_output_folder, tabula_output_folder):
@@ -51,7 +54,7 @@ def run_pipeline(file_path, images_output_folder, words_json_output_folder, bbox
     pages = create_words_json(file_path, words_json_output_folder)
     run_table_detection(images_home, words_json_home, bboxes_json_home)
 
-    input("press any key when table detection pipeline is complete")
+    # input("press any key when table detection pipeline is complete")
 
     for page_no in range(1, pages+1):
         z_filled_page_no = "{:{fill_char}3}".format(page_no, fill_char=fill_char)
