@@ -35,10 +35,13 @@ def format_passages(passages):
 
 def main():
     st.title("Question and Passage Feedback")
-    initial_sl_no = 1
+    initial_sl_no = 0
+    question_no = st.number_input("Enter the serial number of the question you want to go", step=1, value=0)
+    if question_no != 0:
+        st.session_state.serial_number = question_no
     if "serial_number" in st.session_state:
         initial_sl_no = st.session_state.serial_number
-
+    st.write(st.session_state)
     data = get_data(initial_sl_no)
     if data:
         for entry in data:
@@ -50,13 +53,15 @@ def main():
             passages_list = entry["Passages"].split(";")
             passage_id_list = list(map(int, entry["Passage IDs"].split(";")))
 
+            checked_status_list = list(map(int, str(entry["Status"]).split(";")))
             passage_text_passage_id_mapping = {}
             for passage_text, passage_id in zip(passages_list, passage_id_list):
                 passage_text_passage_id_mapping[passage_text] = passage_id
             
             checkbox_states = []
             for passage_id, passage_text in zip(passage_id_list, passages_list):
-                checkbox_state = st.checkbox(f"{passage_id}: {passage_text}")
+                checked_status = passage_id in checked_status_list
+                checkbox_state = st.checkbox(f"{passage_id}: {passage_text}", value=checked_status)
                 checkbox_states.append(checkbox_state)
             
             selected_passage_ids = []
@@ -74,10 +79,10 @@ def main():
             st.write(entry["Generated Answer"])
 
             st.subheader("Feedback on Generated Answer")
-            generated_answer_feedback = st.selectbox("Answer quality", ["Good", "Poor", "Wrong"])
+            generated_answer_feedback = st.selectbox("Answer quality", ["Good", "Poor", "Wrong"], key="generated_answer_feedback")
             remark_options = ["Verbose", "Impressive", "Succinct", "Hallucinating", "Others"]
             st.subheader("Remark on the answer characteristics")
-            remark = st.selectbox("Answer characteristics", remark_options)
+            remark = st.selectbox("Answer characteristics", remark_options, key="remark`")
 
             if remark == "Others":
                 remark = st.text_input("Enter your remark")
@@ -92,24 +97,24 @@ def main():
                 save_feedback(feedback)
             st.write("---")
         
-        button_col1, button_col2 = st.columns(2)
+        # button_col1, button_col2 = st.columns(2)
 
-        if button_col1.button("Move Previous"):
-            initial_sl_no -= 1
-            st.session_state.serial_number = initial_sl_no
-            data = get_data(initial_sl_no)
-            st.experimental_rerun()
-        if button_col2.button("Move Next"):
-            initial_sl_no += 1
-            st.session_state.serial_number = initial_sl_no
-            data = get_data(initial_sl_no)
-            st.experimental_rerun()
+        # if button_col1.button("Move Previous"):
+        #     initial_sl_no -= 1
+        #     st.session_state.serial_number = initial_sl_no
+        #     data = get_data(initial_sl_no)
+        #     st.experimental_rerun()
+        # if button_col2.button("Move Next"):
+        #     initial_sl_no += 1
+        #     st.session_state.serial_number = initial_sl_no
+        #     data = get_data(initial_sl_no)
+        #     st.experimental_rerun()
     else:
         st.write("No more data available")
     
 if __name__ == "__main__":
     if "serial_number" not in st.session_state:
-        st.session_state.serial_number = 1
+        st.session_state.serial_number = 0
     if "user_passages" not in st.session_state:
         st.session_state.user_passages = []
     main()
