@@ -19,6 +19,7 @@ class FeedbackEntry(BaseModel):
     selected_passage_ids: List[int]
     generated_answer_feedback: str
     remark: str
+    email_address: str
 
 
 @app.get("/")

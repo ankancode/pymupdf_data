@@ -37,6 +37,11 @@ def main():
     st.title("Question and Passage Feedback")
     initial_sl_no = 0
     question_no = st.number_input("Enter the serial number of the question you want to go", step=1, value=0)
+    # if st.session_state.email_address:
+        
+    email_address = st.text_input("Enter your company email id")
+    if email_address:
+        st.session_state.email_address = email_address
     if question_no != 0:
         st.session_state.serial_number = question_no
     if "serial_number" in st.session_state:
@@ -92,7 +97,8 @@ def main():
                     "serial_number": entry['Serial Number'],
                     "selected_passage_ids": selected_passage_ids,
                     "generated_answer_feedback": generated_answer_feedback,
-                    "remark": remark
+                    "remark": remark,
+                    "email_address": email_address
                 }
                 save_feedback(feedback)
             st.write("---")
@@ -117,4 +123,6 @@ if __name__ == "__main__":
         st.session_state.serial_number = 0
     if "user_passages" not in st.session_state:
         st.session_state.user_passages = []
+    if "email_address" not in st.session_state:
+        st.session_state.email_address = ""
     main()
