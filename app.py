@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 
-API_URL = "http://localhost:8000"
+API_URL = "http://localhost:9800"
 
 
 def get_data(serial_number):

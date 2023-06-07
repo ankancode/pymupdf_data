@@ -46,4 +46,4 @@ def submit_feedback(feedback: FeedbackEntry):
     return {"message": f"Feedback submitted successfully {insert_result.inserted_id}"}
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="localhost", port=8000)
+    uvicorn.run(app, host="localhost", port=9800)
