@@ -34,6 +34,7 @@ def format_passages(passages):
 
 
 def main():
+    st.title("Feedback Page")
     st.title("Question and Passage Feedback")
     initial_sl_no = 0
     question_no = st.number_input("Enter the serial number of the question you want to go", step=1, value=0)
@@ -117,10 +118,24 @@ def main():
         #     st.experimental_rerun()
     else:
         st.write("No more data available")
-    
+
+
+def results_page():
+    st.title("Results Screen")
+    # Read the Excel file and display data
+    import pandas as pd
+    data = pd.read_excel("EvaluationDataset.xlsx")  # Replace "your_file.xlsx" with your file path
+    st.dataframe(data)
+
+
 if __name__ == "__main__":
     if "serial_number" not in st.session_state:
         st.session_state.serial_number = 0
     if "email_address" not in st.session_state:
         st.session_state.email_address = ""
-    main()
+    page = st.sidebar.selectbox("Select Page", ["Main Page", "Results Screen"])
+    
+    if page == "Main Page":
+        main()
+    elif page == "Results Screen":
+        results_page()
