@@ -121,8 +121,6 @@ def main():
 if __name__ == "__main__":
     if "serial_number" not in st.session_state:
         st.session_state.serial_number = 0
-    if "user_passages" not in st.session_state:
-        st.session_state.user_passages = []
     if "email_address" not in st.session_state:
         st.session_state.email_address = ""
     main()
