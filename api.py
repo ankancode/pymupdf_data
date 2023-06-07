@@ -33,6 +33,8 @@ async def read_data(serial_number: int=Query(..., description="The serial number
 def submit_feedback(feedback: FeedbackEntry):
     print("here")
     feedback_dict = feedback.dict()
+    import datetime
+    feedback_dict["timestamp"] = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
     # feedback_dict["_id"] = ObjectId()
     # Save the feedback to MongoDB 
     insert_result = collection.insert_one(feedback_dict)
