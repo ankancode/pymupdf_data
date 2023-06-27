@@ -61,7 +61,8 @@ def get_optional_font_info(o: Any):
     return ""
 
 
-def get_all_outputs(path):
+def get_all_outputs(file_path):
+    path = Path(file_path).expanduser()
     pages = extract_pages(path)
     # pages = extract_pages(path, laparams)
     all_outputs = []
@@ -193,11 +194,10 @@ def get_page_wise_data(all_outputs):
 
 
 def extract_character_info(file_path):
-    path = Path(file_path).expanduser()
     # from pdfminer.layout import LAParams
     # word_margin = 4
     # laparams = LAParams(word_margin=word_margin)
-    all_outputs = get_all_outputs(path)
+    all_outputs = get_all_outputs(file_path)
     page_wise_data = get_page_wise_data(all_outputs)
     return page_wise_data, all_outputs
 
@@ -258,6 +258,32 @@ def extract_word_info(page_wise_data):
 
         page_wise_words[page_no] = all_words
     return page_wise_words
+
+
+def convert_coordinates_to_top_left_origin(coordinates, page_height):
+    x1, y1, x2, y2 = coordinates['bottom_left_x'], page_height-coordinates['top_right_y'], coordinates['top_right_x'], page_height-coordinates['bottom_left_y']
+    return [x1, y1, x2, y2]
+
+
+def extract_textbox_horizontal_info(all_outputs):
+    page_height = all_outputs[0][1]["top_right_y"]
+    page_wise_textbox_horizontals = {}
+    page_no = 0
+    textbox_id = 0
+    for current_element in all_outputs:
+        if current_element[0] == "LTPage":
+            page_no += 1
+            page_wise_textbox_horizontals[page_no] = []
+        elif current_element[0] == "LTTextBoxHorizontal":
+            textbox_id += 1
+            textbox_element = {
+                "textbox_id": textbox_id,
+                "text": current_element[2],
+                "font": current_element[3],
+                "bbox": convert_coordinates_to_top_left_origin(current_element[1], page_height)
+            }
+            page_wise_textbox_horizontals[page_no].append(textbox_element)
+    return page_wise_textbox_horizontals
 
 
 if __name__ == "__main__":
