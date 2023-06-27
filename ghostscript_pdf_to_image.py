@@ -4,7 +4,7 @@ import os
 import subprocess
 
 
-def convert_pdf_to_image(file_path, output_folder, resolution=96, image_extension="jpg"):
+def convert_pdf_to_image(file_path, output_folder, resolution=72, image_extension="jpg"):
     if image_extension == "jpeg":
         device = "jpeg"
     elif image_extension == "png":
