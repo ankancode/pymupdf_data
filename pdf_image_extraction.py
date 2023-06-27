@@ -13,7 +13,7 @@ def extract_image_info(file_path, images_output_folder):
     os.makedirs(file_output_folder, exist_ok=True)
 
     pdf_file = fitz.open(file_path)
-    
+    image_id = 0
     for page_index in range(1, len(pdf_file)+1):
         page_images_paths = []
         page = pdf_file[page_index-1]
@@ -41,10 +41,10 @@ def extract_image_info(file_path, images_output_folder):
             
             # only making folder for those pages which have at least one image inside them
             os.makedirs(full_page_path_dest, exist_ok=True)
-
+            image_id += 1
             image_save_path = os.path.join(full_page_path_dest, f"image_{image_index}.{image_ext}")
             image.save(open(image_save_path, "wb"))
-            page_images_paths.append((image_save_path, list(image_rects[0])))
+            page_images_paths.append({"image_id": image_id, "image_path": image_save_path, "bbox": list(image_rects[0])})
         extracted_image_json[page_index] = page_images_paths
     return extracted_image_json
 
