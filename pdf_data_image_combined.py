@@ -13,16 +13,14 @@ def get_image_insertion_index(combined_list, image_bbox):
     return 0
 
 
-if __name__ == "__main__":
-    file_path = input("file_path: ")
-    images_output_folder = input("images_output_folder: ")
+def get_passage(file_path, images_output_folder):
     os.makedirs(images_output_folder, exist_ok=True)
     filename = os.path.basename(file_path)
     folder_path = os.path.dirname(file_path)
     filename_wo_ext, ext = os.path.splitext(filename)
     all_outputs = get_all_outputs(file_path)
-    with open(f"{filename_wo_ext}_all_outputs.json", "w") as f:
-        f.write(json.dumps(all_outputs, indent=4))
+    # with open(f"{filename_wo_ext}_all_outputs.json", "w") as f:
+    #     f.write(json.dumps(all_outputs, indent=4))
     page_wise_textbox_horizontals = extract_textbox_horizontal_info(all_outputs)
     extracted_image_json = extract_image_info(file_path, images_output_folder)
     all_combined_list = {}
@@ -45,9 +43,17 @@ if __name__ == "__main__":
                 passage_data.append(current_element["text"])
             elif "image_id" in current_element.keys():
                 passage_data.append(f'The reference image for this is {os.path.basename(current_element["image_path"])}\n')
+    return {"passage": " ".join(passage_data)}
 
-    with open(f"{filename_wo_ext}_all_combined.json", "w", encoding="utf-8") as f:
-        f.write(json.dumps(all_combined_list, indent=4))
 
+if __name__ == "__main__":
+    file_path = input("file_path: ")
+    images_output_folder = input("images_output_folder: ")
+    filename = os.path.basename(file_path)
+    folder_path = os.path.dirname(file_path)
+    filename_wo_ext, ext = os.path.splitext(filename)
+    # with open(f"{filename_wo_ext}_all_combined.json", "w", encoding="utf-8") as f:
+    #     f.write(json.dumps(all_combined_list, indent=4))
+    passage = get_passage(file_path, images_output_folder)
     with open(f"{filename_wo_ext}_passage.json", "w", encoding="utf-8") as f:
-        f.write(json.dumps({"passage": " ".join(passage_data)}))
+        f.write(json.dumps(passage, indent=4))
