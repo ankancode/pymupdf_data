@@ -21,6 +21,8 @@ if __name__ == "__main__":
     folder_path = os.path.dirname(file_path)
     filename_wo_ext, ext = os.path.splitext(filename)
     all_outputs = get_all_outputs(file_path)
+    with open(f"{filename_wo_ext}_all_outputs.json", "w") as f:
+        f.write(json.dumps(all_outputs, indent=4))
     page_wise_textbox_horizontals = extract_textbox_horizontal_info(all_outputs)
     extracted_image_json = extract_image_info(file_path, images_output_folder)
     all_combined_list = {}
@@ -34,5 +36,18 @@ if __name__ == "__main__":
                 insertion_index = get_image_insertion_index(combined_list, image_bbox)
                 combined_list.insert(insertion_index, image)
         all_combined_list[page_no] = combined_list
+
+    passage_data = []
+    for page_no in all_combined_list:
+        page_elements = all_combined_list[page_no]
+        for current_element in page_elements:
+            if "textbox_id" in current_element.keys():
+                passage_data.append(current_element["text"])
+            elif "image_id" in current_element.keys():
+                passage_data.append(current_element["image_path"])
+
     with open(f"{filename_wo_ext}_all_combined.json", "w", encoding="utf-8") as f:
         f.write(json.dumps(all_combined_list, indent=4))
+
+    with open(f"{filename_wo_ext}_passage.txt", "w", encoding="utf-8") as f:
+        f.write(" ".join(passage_data))
