@@ -44,10 +44,10 @@ if __name__ == "__main__":
             if "textbox_id" in current_element.keys():
                 passage_data.append(current_element["text"])
             elif "image_id" in current_element.keys():
-                passage_data.append(current_element["image_path"])
+                passage_data.append(f'The reference image for this is {os.path.basename(current_element["image_path"])}\n')
 
     with open(f"{filename_wo_ext}_all_combined.json", "w", encoding="utf-8") as f:
         f.write(json.dumps(all_combined_list, indent=4))
 
-    with open(f"{filename_wo_ext}_passage.txt", "w", encoding="utf-8") as f:
-        f.write(" ".join(passage_data))
+    with open(f"{filename_wo_ext}_passage.json", "w", encoding="utf-8") as f:
+        f.write(json.dumps({"passage": " ".join(passage_data)}))
