@@ -49,11 +49,14 @@ def get_passage(file_path, images_output_folder):
 if __name__ == "__main__":
     file_path = input("file_path: ")
     images_output_folder = input("images_output_folder: ")
+    passages_output_folder = input("passages_output_folder: ")
+    os.makedirs(passages_output_folder, exist_ok=True)
     filename = os.path.basename(file_path)
     folder_path = os.path.dirname(file_path)
     filename_wo_ext, ext = os.path.splitext(filename)
     # with open(f"{filename_wo_ext}_all_combined.json", "w", encoding="utf-8") as f:
     #     f.write(json.dumps(all_combined_list, indent=4))
     passage = get_passage(file_path, images_output_folder)
-    with open(f"{filename_wo_ext}_passage.json", "w", encoding="utf-8") as f:
+    passage_json_path = os.path.join(passages_output_folder, f"{filename_wo_ext}_passage.json")
+    with open(passage_json_path, "w", encoding="utf-8") as f:
         f.write(json.dumps(passage, indent=4))
